@@ -32,3 +32,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+VRGame/Temp
+VRGame/Temp/*
+VRGame/Library
+VRGame/Library/*
+VRGame/Temp/UnityLockfile
+
