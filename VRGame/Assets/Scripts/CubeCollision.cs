@@ -12,7 +12,7 @@ public class CubeCollision : MonoBehaviour
             return;
         }
 
-        col.enabled = false;
+        //col.enabled = false;
         Destroy(gameObject, destroyTimeout);
     }
 
