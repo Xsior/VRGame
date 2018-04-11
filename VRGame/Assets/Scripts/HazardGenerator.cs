@@ -23,9 +23,8 @@ public class HazardGenerator : MonoBehaviour {
     private void generatWall()
     {
         int r = Random.Range(0, walls.Count);
-        float rX = Random.Range(-1.0f, 1.0f);
         GameObject g = Instantiate(walls[r], Vector3.zero, transform.rotation, transform);
-        g.transform.localPosition = new Vector3(rX, 0, 35);
+        g.transform.localPosition = new Vector3(0, 0, 35);
     }
 
     // Update is called once per frame
