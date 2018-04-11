@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HazardGenerator : MonoBehaviour
 {
-
     public List<GameObject> walls;
     public List<GameObject> blocks;
     public bool started = true;
