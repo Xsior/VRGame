@@ -10,7 +10,7 @@ public class HazardGenerator : MonoBehaviour
     public float TimeToNext = 2;
 
     private float timer = 2;
-    private float toNextWall;
+    private float toNextWall = 3;
 
     private void generateBlock ()
     {
