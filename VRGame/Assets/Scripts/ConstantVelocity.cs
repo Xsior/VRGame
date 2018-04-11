@@ -9,7 +9,7 @@ public class ConstantVelocity : MonoBehaviour
 
     void Update()
     {
-        transform.position += velocity * Time.deltaTime;
+        transform.localPosition += velocity * Time.deltaTime;
     }
 
 
