@@ -39,6 +39,7 @@ public class SteamVR_TrackedObject : MonoBehaviour
 
 	private void OnNewPoses(TrackedDevicePose_t[] poses)
 	{
+        Debug.Log("On new poses", gameObject);
 		if (index == EIndex.None)
 			return;
 
