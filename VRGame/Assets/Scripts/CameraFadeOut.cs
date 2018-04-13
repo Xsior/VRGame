@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraFadeOut : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class CameraFadeOut : MonoBehaviour
         }
 
         fadeOutMaterial.SetFloat("_Progress", 1f);
+        SendFadeOutMessage();
     }
 
     private void OnRenderImage (RenderTexture source, RenderTexture destination)
@@ -36,5 +38,10 @@ public class CameraFadeOut : MonoBehaviour
         }
 
         Graphics.Blit(source, destination, fadeOutMaterial, 0);
+    }
+
+    private void SendFadeOutMessage()
+    {
+        ExecuteEvents.Execute<IFadeOutListener>(gameObject, null, (handler, data) => handler.OnFadeOut());
     }
 }

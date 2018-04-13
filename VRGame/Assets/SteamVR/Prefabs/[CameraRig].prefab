@@ -131,7 +131,8 @@ GameObject:
   - component: {fileID: 114665530685322684}
   - component: {fileID: 114169627845713078}
   - component: {fileID: 114383114719984120}
-  - component: {fileID: 114728432047313482}
+  - component: {fileID: 114504687851675394}
+  - component: {fileID: 114582756336594832}
   m_Layer: 8
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -674,6 +675,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114504687851675394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e77ef31f567e74b99b4b3c3403ea97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOut: 2
 --- !u!114 &114532609658485788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -713,6 +726,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onPlayerFailed: {fileID: 11400000, guid: 0a88b21f0b320dd47ab3949d1c841cc6, type: 2}
+--- !u!114 &114582756336594832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 408470}
+  _ears: {fileID: 439042}
+  wireframe: 0
 --- !u!114 &114636754771723970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -774,20 +801,6 @@ MonoBehaviour:
         m_CallState: 0
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114728432047313482
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 408470}
-  _ears: {fileID: 439042}
-  wireframe: 0
 --- !u!135 &135357058955315882
 SphereCollider:
   m_ObjectHideFlags: 1
