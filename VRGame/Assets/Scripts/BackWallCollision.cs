@@ -1,16 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Framework.Events;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class BackWallCollision : MonoBehaviour
 {
+    public GameEvent onPlayerFailed;
+
     private void OnTriggerEnter (Collider other)
     {
         if (other.GetComponent<CubeCollision>() == null) {
             return;
         }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        onPlayerFailed.Raise();
     }
 }
