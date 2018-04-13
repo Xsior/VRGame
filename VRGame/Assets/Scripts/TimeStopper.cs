@@ -21,6 +21,6 @@ public class TimeStopper : MonoBehaviour
 
     private void Start ()
     {
-        StopTime();
+        LaunchTime();
     }
 }

@@ -190,6 +190,8 @@ GameObject:
   - component: {fileID: 2095874576}
   - component: {fileID: 2095874575}
   - component: {fileID: 2095874579}
+  - component: {fileID: 2095874581}
+  - component: {fileID: 2095874580}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -273,3 +275,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeSpeed: 2.55
   fadeOutMaterial: {fileID: 2100000, guid: a50c06c34366ea74db144054d8375030, type: 2}
+--- !u!114 &2095874580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095874574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb2511d46a1bea4786a59b1218d0b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 0a88b21f0b320dd47ab3949d1c841cc6, type: 2}
+  onRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2095874579}
+        m_MethodName: FadeOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &2095874581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095874574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e77ef31f567e74b99b4b3c3403ea97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOut: 2
