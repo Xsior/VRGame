@@ -8,11 +8,15 @@ public class CameraFadeOut : MonoBehaviour
     public float fadeSpeed = 4;
     public Material fadeOutMaterial;
 
-    private bool isPressed;
+    private bool isTriggered;
 
     public void FadeOut ()
     {
-        isPressed = true;
+        if (isTriggered) {
+            return;
+        }
+
+        isTriggered = true;
         StartCoroutine(FadeOutCoroutine());
     }
 
@@ -32,7 +36,7 @@ public class CameraFadeOut : MonoBehaviour
 
     private void OnRenderImage (RenderTexture source, RenderTexture destination)
     {
-        if (!isPressed) {
+        if (!isTriggered) {
             Graphics.Blit(source, destination);
             return;
         }
