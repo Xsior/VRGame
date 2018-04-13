@@ -34,13 +34,15 @@ public class HazardGenerator : MonoBehaviour
             if (timer > 0) {
                 timer -= Time.deltaTime;
             } else {
-                if (toNextWall == 0) {
-                    generatWall();
+                Debug.Log("CHuj");
+                /*if (toNextWall == 0) {
+                    //generatWall();
+                    generateBlock();
                     toNextWall = 3;
-                } else {
+                } else {*/
                     generateBlock();
                     toNextWall--;
-                }
+               // }
                 timer = TimeToNext;
                 if (TimeToNext > 0.5f)
                     TimeToNext -= 0.02f;
