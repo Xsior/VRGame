@@ -3,6 +3,7 @@
 public class CubeCollision : MonoBehaviour
 {
     public float destroyTimeout = 1f;
+    public ParticleSystem particles;
 
     private Collider col;
 
@@ -12,8 +13,8 @@ public class CubeCollision : MonoBehaviour
             return;
         }
 
-        //col.enabled = false;
-        Destroy(gameObject, destroyTimeout);
+        Destroy(gameObject);
+        Instantiate(particles, transform.position, Quaternion.identity);
     }
 
     private void Awake ()
