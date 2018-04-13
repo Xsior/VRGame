@@ -2,8 +2,8 @@
 
 public class CubeCollision : MonoBehaviour
 {
-    public float destroyTimeout = 1f;
-    public ParticleSystem particles;
+    public float destroyTimeout = 0.1f;
+    private ParticleSystem particles;
 
     private Collider col;
 
@@ -13,12 +13,16 @@ public class CubeCollision : MonoBehaviour
             return;
         }
 
-        Destroy(gameObject);
-        Instantiate(particles, transform.position, Quaternion.identity);
+        //Instantiate(particles, transform.position, Quaternion.identity);
+        particles.Play();
+        GetComponent<MeshRenderer>().enabled = false;
+        col.enabled = false;
+        Destroy(gameObject, destroyTimeout);
     }
 
     private void Awake ()
     {
         col = GetComponent<Collider>();
+        particles = GetComponent<ParticleSystem>();
     }
 }

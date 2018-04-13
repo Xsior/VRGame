@@ -7,7 +7,7 @@ public class HazardGenerator : MonoBehaviour
     public List<GameObject> walls;
     public List<GameObject> blocks;
     public bool started = true;
-    public float TimeToNext = 2;
+    public float TimeToNext = 3.5f;
 
     private float timer = 2;
     private float toNextWall = 3;
@@ -16,7 +16,7 @@ public class HazardGenerator : MonoBehaviour
     {
         int r = Random.Range(0, blocks.Count);
         float rX = Random.Range(-1.0f, 1.0f);
-        float rY = Random.Range(1.0f, 2f);
+        float rY = Random.Range(0.7f, 1.5f);
         GameObject g = Instantiate(blocks[r], Vector3.zero, transform.rotation, transform);
         g.transform.localPosition = new Vector3(rX, rY, 35);
     }
@@ -44,7 +44,7 @@ public class HazardGenerator : MonoBehaviour
                     toNextWall--;
                // }
                 timer = TimeToNext;
-                if (TimeToNext > 0.5f)
+                if (TimeToNext > 1.5f)
                     TimeToNext -= 0.02f;
             }
         }
