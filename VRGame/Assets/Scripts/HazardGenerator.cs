@@ -39,7 +39,8 @@ public class HazardGenerator : MonoBehaviour
         }
         Debug.Log(length);
         timer = (length + distanceBetweenSegmentsd) / currentSpeed;
-        if(toNextWall == 0)
+        toNextWall--;
+        if (toNextWall == 0)
         {
             timer += 3;
         }
@@ -53,14 +54,21 @@ public class HazardGenerator : MonoBehaviour
         BlocksSegment b = g.GetComponent<BlocksSegment>();
         g.transform.localPosition = new Vector3(rX,rY, 35);
         b.setSpeed(new Vector3(0, 0, -currentSpeed));
-        timer = 2.5f / currentSpeed;
+        timer = 2.3f / currentSpeed;
+        toNextWall--;
+        if (toNextWall == 0)
+        {
+            timer += 3;
+        }
     }
 
     private void generatWall()
     {
         int r = Random.Range(0, walls.Count);
         GameObject g = Instantiate(walls[r], Vector3.zero, transform.rotation, transform);
-        g.transform.localPosition = new Vector3(0, 0, 35);
+        g.transform.localPosition = new Vector3(0, 1.25f, 35);
+        g.GetComponent<ConstantVelocity>().velocity = new Vector3(0, 0, -currentSpeed);
+        timer = 3.5f / currentSpeed;
         
     }
 
@@ -79,15 +87,13 @@ public class HazardGenerator : MonoBehaviour
                 timer -= Time.fixedDeltaTime;
             }
             else {
-                /*if (toNextWall == 0) {
-                    //generatWall();
-                    generateBlock();
-                    toNextWall = 3;
-                } else {*/
+                if (toNextWall == 0) {
+                    toNextWall = 5;
+                    generatWall();
+                } else {
                 generateBlock();
-                toNextWall--;
-                // }
-                //timer = TimeToNext;
+                 }
+                
                 currentSpeed += 0.05f;
                 if (TimeToNext > 1.5f)
                     TimeToNext -= 0.02f;
