@@ -6,6 +6,7 @@ public class HazardGenerator : MonoBehaviour
 {
     public List<GameObject> walls;
     public List<GameObject> blocks;
+    public GameObject block;
     public bool started = true;
     public float TimeToNext = 3.5f;
     public float startSpeed = 5;
@@ -17,7 +18,12 @@ public class HazardGenerator : MonoBehaviour
 
     private void generateBlock()
     {
-        int r = Random.Range(0, blocks.Count);
+        int r = Random.Range(0, blocks.Count+1);
+        if(r == blocks.Count)
+        {
+            GenerateRandomBlock();
+            return;
+        }
         GameObject g = Instantiate(blocks[r], Vector3.zero, transform.rotation, transform);
         BlocksSegment b = g.GetComponent<BlocksSegment>();
         g.transform.localPosition = new Vector3(0, 1, 35);
@@ -34,6 +40,18 @@ public class HazardGenerator : MonoBehaviour
         Debug.Log(length);
         timer = (length + distanceBetweenSegmentsd) / currentSpeed;
     }
+    void GenerateRandomBlock()
+    {
+        float rX = Random.Range(-1, 1);
+        float rY = Random.Range(0, 1.5f);
+
+        GameObject g = Instantiate(block, Vector3.zero, transform.rotation, transform);
+        BlocksSegment b = g.GetComponent<BlocksSegment>();
+        g.transform.localPosition = new Vector3(rX,rY, 35);
+        b.setSpeed(new Vector3(0, 0, -currentSpeed));
+        timer = 1.5f / currentSpeed;
+    }
+
     private void generatWall()
     {
         int r = Random.Range(0, walls.Count);
