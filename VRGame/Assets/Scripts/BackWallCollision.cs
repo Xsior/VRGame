@@ -32,8 +32,10 @@ public class BackWallCollision : MonoBehaviour
     {
         foreach (Rigidbody c in children)
         {
-            c.isKinematic = true;
-            c.AddForce(new Vector3(0, 0, 50));
+            c.isKinematic = false;
+            c.gameObject.GetComponent<Collider>().isTrigger = false;
+            //c.AddForce(new Vector3(0, 0, 50));
+            c.AddExplosionForce(250, new Vector3(8, 0.2f, 0), 0);
         }
     }
 }
