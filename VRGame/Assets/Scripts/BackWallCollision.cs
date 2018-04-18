@@ -35,7 +35,7 @@ public class BackWallCollision : MonoBehaviour
             c.isKinematic = false;
             c.gameObject.GetComponent<Collider>().isTrigger = false;
             //c.AddForce(new Vector3(0, 0, 50));
-            c.AddExplosionForce(250, new Vector3(8, 0.2f, 0), 0);
+            c.AddExplosionForce(3000, new Vector3(13, 0.2f, 0), 0);
         }
     }
 }
