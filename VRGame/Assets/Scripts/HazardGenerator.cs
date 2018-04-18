@@ -56,7 +56,7 @@ public class HazardGenerator : MonoBehaviour
     {
         int r = Random.Range(0, walls.Count);
         GameObject g = Instantiate(walls[r], Vector3.zero, transform.rotation, transform);
-        g.transform.localPosition = new Vector3(0, 0, 35);
+        g.transform.localPosition = new Vector3(0, 1.75f, 35);
         
     }
 
