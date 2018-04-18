@@ -26,7 +26,7 @@ public class HazardGenerator : MonoBehaviour
         }
         GameObject g = Instantiate(blocks[r], Vector3.zero, transform.rotation, transform);
         BlocksSegment b = g.GetComponent<BlocksSegment>();
-        g.transform.localPosition = new Vector3(0, 1, 35);
+        g.transform.localPosition = new Vector3(0, 1.3f, 35);
         b.setSpeed(new Vector3(0, 0, -currentSpeed));
         float length;
         if (b.length == 0)
@@ -40,15 +40,15 @@ public class HazardGenerator : MonoBehaviour
         Debug.Log(length);
         timer = (length + distanceBetweenSegmentsd) / currentSpeed;
         toNextWall--;
-        if (toNextWall == 0)
+        if (toNextWall <= 0)
         {
-            timer += 3;
+            timer += 1.5f;
         }
     }
     void GenerateRandomBlock()
     {
         float rX = Random.Range(-0.6f, 0.6f);
-        float rY = Random.Range(0.5f, 1.5f);
+        float rY = Random.Range(0.7f, 2f);
 
         GameObject g = Instantiate(block, Vector3.zero, transform.rotation, transform);
         BlocksSegment b = g.GetComponent<BlocksSegment>();
@@ -56,9 +56,9 @@ public class HazardGenerator : MonoBehaviour
         b.setSpeed(new Vector3(0, 0, -currentSpeed));
         timer = 2.3f / currentSpeed;
         toNextWall--;
-        if (toNextWall == 0)
+        if (toNextWall <= 0)
         {
-            timer += 3;
+            timer += 1.5f;
         }
     }
 
@@ -66,9 +66,9 @@ public class HazardGenerator : MonoBehaviour
     {
         int r = Random.Range(0, walls.Count);
         GameObject g = Instantiate(walls[r], Vector3.zero, transform.rotation, transform);
-        g.transform.localPosition = new Vector3(0, 1.75f, 35);
+        g.transform.localPosition = new Vector3(0, 2.196f, 35);
         g.GetComponent<ConstantVelocity>().velocity = new Vector3(0, 0, -currentSpeed);
-        timer = 3.5f / currentSpeed;
+        timer = 5f / currentSpeed;
         
     }
 
@@ -87,8 +87,8 @@ public class HazardGenerator : MonoBehaviour
                 timer -= Time.fixedDeltaTime;
             }
             else {
-                if (toNextWall == 0) {
-                    toNextWall = 5;
+                if (toNextWall <= 0) {
+                    toNextWall = 7;
                     generatWall();
                 } else {
                 generateBlock();
