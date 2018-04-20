@@ -11,6 +11,11 @@ public class Grabbing : MonoBehaviour
 
     private FixedJoint joint;
 
+    public void HapticPulse()
+    {
+        Controller.TriggerHapticPulse();
+    }
+
     private void Grab ()
     {
         if (collidingObject == null) {

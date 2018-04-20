@@ -1,4 +1,5 @@
-﻿using Framework.References;
+﻿using Framework.Events;
+using Framework.References;
 using UnityEngine;
 
 public class CubeCollision : MonoBehaviour
@@ -6,6 +7,8 @@ public class CubeCollision : MonoBehaviour
     public float destroyTimeout = 0.1f;
     public IntReference score;
     private ParticleSystem particles;
+
+    public GameEvent onBlockCollision;
 
     private Collider col;
 
@@ -22,6 +25,8 @@ public class CubeCollision : MonoBehaviour
         Destroy(gameObject, destroyTimeout);
 
         score.Value += 1;
+
+        onBlockCollision.Raise();
     }
 
     private void Awake ()
