@@ -10,6 +10,8 @@ public class BlocksSegment : MonoBehaviour
 
     public ConstantVelocity itemPrefab;
 
+    public Vector3 Velocity { get; set; }
+
     private List<ConstantVelocity> blocksSpeed = new List<ConstantVelocity>();
 
     public float getLength ()
@@ -42,8 +44,7 @@ public class BlocksSegment : MonoBehaviour
         foreach (Transform child in transform) {
             var itemInstance = Instantiate(itemPrefab, child, false);
             itemInstance.transform.localPosition = Vector3.zero;
-
-            blocksSpeed.Add(itemInstance);
+            itemInstance.velocity = Velocity;
         }
     }
 

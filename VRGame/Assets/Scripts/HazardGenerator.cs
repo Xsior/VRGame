@@ -9,18 +9,24 @@ public class HazardGenerator : MonoBehaviour
     public List<GameObject> blocks;
     public GameObject block;
 
-    [Header("Spawning info")]
-
     //This is never used. Remove?
     [HideInInspector] public float TimeToNext = 3.5f;
 
+    [Header("Spawning info")]
     public float startSpeed = 5;
     public float spawningDistance = 35;
+    public float wallSpawnHeight = 2.196f;
     public float distanceBetweenSegmentsd = 5;
+
+    [Header("Timing")]
+    public float distanceBetweenRandomBlocks = 3f;
+    public float distanceBetweenWalls = 5f;
+    public int blocksBeforeTheWall = 7;
 
     private float currentSpeed;
     private float timer = 2;
-    private float toNextWall = 3;
+    private float timePassed;
+    private float toNextWall;
 
     private void GenerateBlock ()
     {
@@ -32,7 +38,7 @@ public class HazardGenerator : MonoBehaviour
         GameObject g = Instantiate(blocks[r], Vector3.zero, transform.rotation, transform);
         BlocksSegment b = g.GetComponent<BlocksSegment>();
         g.transform.localPosition = new Vector3(0, 1.3f, spawningDistance);
-        b.setSpeed(new Vector3(0, 0, -currentSpeed));
+        b.Velocity = new Vector3(0, 0, -currentSpeed);
 
         var length = Mathf.Approximately(b.length, 0f) ? b.getLength() : b.length;
 
@@ -48,11 +54,11 @@ public class HazardGenerator : MonoBehaviour
         float rX = Random.Range(-0.6f, 0.6f);
         float rY = Random.Range(0.7f, 2f);
 
-        GameObject g = Instantiate(block, Vector3.zero, transform.rotation, transform);
-        BlocksSegment b = g.GetComponent<BlocksSegment>();
-        g.transform.localPosition = new Vector3(rX, rY, spawningDistance);
-        b.setSpeed(new Vector3(0, 0, -currentSpeed));
-        timer = 2.3f / currentSpeed;
+        var blockInstance = Instantiate(block, Vector3.zero, transform.rotation, transform);
+        var blockVelocity = blockInstance.GetComponent<ConstantVelocity>();
+        blockInstance.transform.localPosition = new Vector3(rX, rY, spawningDistance);
+        blockVelocity.velocity = new Vector3(0, 0, -currentSpeed);
+        timer = distanceBetweenRandomBlocks / currentSpeed;
         toNextWall--;
         if (toNextWall <= 0) {
             timer += 1.5f;
@@ -63,33 +69,33 @@ public class HazardGenerator : MonoBehaviour
     {
         int r = Random.Range(0, walls.Count);
         GameObject g = Instantiate(walls[r], Vector3.zero, transform.rotation, transform);
-        g.transform.localPosition = new Vector3(0, 2.196f, spawningDistance);
+        g.transform.localPosition = new Vector3(0, wallSpawnHeight, spawningDistance);
         g.GetComponent<ConstantVelocity>().velocity = new Vector3(0, 0, -currentSpeed);
-        timer = 5f / currentSpeed;
+        timer = distanceBetweenWalls / currentSpeed;
     }
 
     void Start ()
     {
         currentSpeed = startSpeed;
+        toNextWall = blocksBeforeTheWall;
     }
 
-    // Update is called once per frame
     void FixedUpdate ()
     {
+        timePassed += Time.fixedDeltaTime;
+
         if (timer > 0) {
             timer -= Time.fixedDeltaTime;
         } else {
 
-            GenerateRandomBlock();
+            if (toNextWall <= 0) {
+                toNextWall = blocksBeforeTheWall;
+                GenerateWall();
+            } else {
+                GenerateBlock();
+            }
 
-            //if (toNextWall <= 0) {
-            //    toNextWall = 7;
-            //    GenerateWall();
-            //} else {
-            //    GenerateBlock();
-            //}
-
-            //currentSpeed += 0.05f;
+            currentSpeed += 0.05f;
             //if (TimeToNext > 1.5f)
             //    TimeToNext -= 0.02f;
         }
