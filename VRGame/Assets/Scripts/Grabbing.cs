@@ -13,7 +13,7 @@ public class Grabbing : MonoBehaviour
 
     public void HapticPulse()
     {
-        Controller.TriggerHapticPulse();
+        Controller.TriggerHapticPulse(1000);
     }
 
     private void Grab ()
