@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 using UnityEngine;
+using Framework.References;
 
 public class ScoreboardManager : MonoBehaviour
 {
     public Text scoreText;
     public Text timeText;
+
+    public IntReference score;
+
     private int numblocks = 0;
     private float startTime;
     float t;
@@ -15,6 +19,7 @@ public class ScoreboardManager : MonoBehaviour
     void Start ()
     {
         startTime = Time.time;
+        score.Value = 0;
     }
 
     void Update ()
@@ -27,7 +32,7 @@ public class ScoreboardManager : MonoBehaviour
             ResetTime();
         }
 
-        scoreText.text = numblocks.ToString();
+        scoreText.text = score.Value.ToString();
 
         timeText.text = StarTime();
     }

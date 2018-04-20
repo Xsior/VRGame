@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿using Framework.References;
+using UnityEngine;
 
 public class CubeCollision : MonoBehaviour
 {
     public float destroyTimeout = 0.1f;
+    public IntReference score;
     private ParticleSystem particles;
 
     private Collider col;
@@ -18,6 +20,8 @@ public class CubeCollision : MonoBehaviour
         GetComponent<MeshRenderer>().enabled = false;
         col.enabled = false;
         Destroy(gameObject, destroyTimeout);
+
+        score.Value += 1;
     }
 
     private void Awake ()
