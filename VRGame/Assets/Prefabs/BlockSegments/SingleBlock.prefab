@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1727612950165316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.099102, y: -10.231929, z: -13.955702}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4660418050303424}
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   length: 0
+  itemPrefab: {fileID: 0}
 --- !u!114 &114629537358071090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,6 +182,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTimeout: 1
+  score:
+    useConstantValue: 0
+    constantValue: 0
+    variable: {fileID: 0}
+  onBlockCollision: {fileID: 0}
 --- !u!198 &198662590711872668
 ParticleSystem:
   m_ObjectHideFlags: 1
