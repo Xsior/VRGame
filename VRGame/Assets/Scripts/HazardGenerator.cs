@@ -15,8 +15,9 @@ public class HazardGenerator : MonoBehaviour
     [Header("Spawning info")]
     public float startSpeed = 5;
     public float spawningDistance = 35;
+    public float PlayerHeight = 1.7f;
     public float wallSpawnHeight = 2.196f;
-    public float distanceBetweenSegmentsd = 5;
+    public float distanceBetweenSegmentsd = 4;
 
     [Header("Timing")]
     public float distanceBetweenRandomBlocks = 3f;
@@ -37,7 +38,7 @@ public class HazardGenerator : MonoBehaviour
         }
         GameObject g = Instantiate(blocks[r], Vector3.zero, transform.rotation, transform);
         BlocksSegment b = g.GetComponent<BlocksSegment>();
-        g.transform.localPosition = new Vector3(0, 1.3f, spawningDistance);
+        g.transform.localPosition = new Vector3(0, PlayerHeight - 0.2f, spawningDistance);
         b.Velocity = new Vector3(0, 0, -currentSpeed);
 
         var length = Mathf.Approximately(b.length, 0f) ? b.getLength() : b.length;
@@ -52,7 +53,7 @@ public class HazardGenerator : MonoBehaviour
     private void GenerateRandomBlock ()
     {
         float rX = Random.Range(-0.6f, 0.6f);
-        float rY = Random.Range(0.7f, 2f);
+        float rY = Random.Range(PlayerHeight - 0.6f, PlayerHeight + 0.4f);
 
         var blockInstance = Instantiate(block, Vector3.zero, transform.rotation, transform);
         var blockVelocity = blockInstance.GetComponent<ConstantVelocity>();
@@ -78,6 +79,12 @@ public class HazardGenerator : MonoBehaviour
     {
         currentSpeed = startSpeed;
         toNextWall = blocksBeforeTheWall;
+        PlayerHeight = Camera.main.transform.localPosition.y;
+        if (PlayerHeight < 1.2f)
+            PlayerHeight = 1.2f;
+        else if (PlayerHeight > 2f)
+            PlayerHeight = 2f;
+
     }
 
     void FixedUpdate ()
