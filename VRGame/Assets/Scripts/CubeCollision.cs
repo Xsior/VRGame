@@ -20,7 +20,11 @@ public class CubeCollision : MonoBehaviour
 
         //Instantiate(particles, transform.position, Quaternion.identity);
         particles.Play();
-        GetComponent<MeshRenderer>().enabled = false;
+        foreach(MeshRenderer m in GetComponentsInChildren<MeshRenderer>())
+        {
+            m.enabled = false;
+        }
+        //GetComponent<MeshRenderer>().enabled = false;
         col.enabled = false;
         Destroy(gameObject, destroyTimeout);
 
