@@ -7,6 +7,7 @@ public class BackWallCollision : MonoBehaviour
     public GameEvent onPlayerFailed;
     private int hp = 3;
     private List<Rigidbody> children = new List<Rigidbody>();
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<CubeCollision>() == null)
@@ -16,7 +17,7 @@ public class BackWallCollision : MonoBehaviour
         hp--;
         if (hp <= 0)
         {
-            BrakeWall();
+            //BrakeWall();
             onPlayerFailed.Raise();
         }
     }
