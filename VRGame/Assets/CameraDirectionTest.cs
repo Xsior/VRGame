@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraDirectionTest : MonoBehaviour
 {
-    private void Start ()
+    private void Update ()
     {
-        Debug.Log(transform.eulerAngles);
+        transform.RotateAround(transform.position, Vector3.right, 15 * Time.deltaTime);
     }
 }

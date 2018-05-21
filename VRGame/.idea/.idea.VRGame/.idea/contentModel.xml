@@ -9,6 +9,7 @@
         <e p="CameraDirectionTest.cs" t="Include" />
         <e p="Materials" t="Include">
           <e p="FadeOut.shader" t="Include" />
+          <e p="ToonShader.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="BackWallCollision.cs" t="Include" />
