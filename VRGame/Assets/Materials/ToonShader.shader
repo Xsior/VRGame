@@ -76,7 +76,7 @@ Shader "Effects/Toon shading"
                attenuation = 1.0; // no attenuation
                lightDirection = normalize(_WorldSpaceLightPos0.xyz);
             } 
-            else {// point or spot light
+            else { // point or spot light
                float3 vertexToLightSource = 
                   _WorldSpaceLightPos0.xyz - input.posWorld.xyz;
                float distance = length(vertexToLightSource);

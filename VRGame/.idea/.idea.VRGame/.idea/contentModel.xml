@@ -8,7 +8,9 @@
       <e p="Assets" t="Include">
         <e p="CameraDirectionTest.cs" t="Include" />
         <e p="Materials" t="Include">
+          <e p="Distortion.shader" t="Include" />
           <e p="FadeOut.shader" t="Include" />
+          <e p="HeatHazeShader.shader" t="Include" />
           <e p="ToonShader.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
@@ -95,6 +97,7 @@
           <e p="Grabbing.cs" t="Include" />
           <e p="HazardGenerator.cs" t="Include" />
           <e p="HeadCollision.cs" t="Include" />
+          <e p="HeatHazeObject.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="IFadeOutListener.cs" t="Include" />
           </e>
