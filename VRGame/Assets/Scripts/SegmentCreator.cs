@@ -25,8 +25,9 @@ public class SegmentCreator : MonoBehaviour {
         var child = new GameObject();
         child.transform.position = transform.position;
         child.transform.parent = parentGO.transform;
-
-        Instantiate(Representation,transform.position,Quaternion.identity,transform.root);
+        child.transform.localRotation = Quaternion.identity;
+        child.name = "childPinapple";
+        Instantiate(Representation,transform.position,Quaternion.identity);
 
     }
 

@@ -18,6 +18,9 @@ public class CubeCollision : MonoBehaviour
             return;
         }
 
+        var grabbing = collision.gameObject.GetComponent<Grabbing>();
+        grabbing?.HapticPulse();
+
         //Instantiate(particles, transform.position, Quaternion.identity);
         particles.Play();
         foreach(MeshRenderer m in GetComponentsInChildren<MeshRenderer>())
