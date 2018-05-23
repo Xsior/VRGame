@@ -13,11 +13,11 @@ public class HazardGenerator : MonoBehaviour
     [HideInInspector] public float TimeToNext = 3.5f;
 
     [Header("Spawning info")]
-    public float startSpeed = 5;
+    public float startSpeed = 7;
     public float spawningDistance = 35;
     public float PlayerHeight = 1.7f;
     public float wallSpawnHeight = 2.196f;
-    public float distanceBetweenSegmentsd = 4;
+    public float distanceBetweenSegments = 4;
 
     [Header("Timing")]
     public float distanceBetweenRandomBlocks = 3f;
@@ -43,7 +43,7 @@ public class HazardGenerator : MonoBehaviour
 
         var length = Mathf.Approximately(b.length, 0f) ? b.getLength() : b.length;
 
-        timer = (length + distanceBetweenSegmentsd) / currentSpeed;
+        timer = (length + distanceBetweenSegments) / currentSpeed;
         toNextWall--;
         if (toNextWall <= 0) {
             timer += 1.5f;
@@ -102,7 +102,7 @@ public class HazardGenerator : MonoBehaviour
                 GenerateBlock();
             }
 
-            currentSpeed += 0.05f;
+            currentSpeed += 0.005f;
             //if (TimeToNext > 1.5f)
             //    TimeToNext -= 0.02f;
         }
