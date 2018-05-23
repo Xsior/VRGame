@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 973c3003f4c830d4597e8bd0ad7a3176
-timeCreated: 1527065519
+guid: 1d581f88e5013134eb2057acfe62bdbd
+timeCreated: 1527063380
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -59,12 +59,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: edge
-    second: {fileID: 2100000, guid: 2d71acf4ba9b2904ead475806620fa79, type: 2}
+    second: {fileID: 2100000, guid: 4f664987b994ee247a04d0ea2e7679c8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: parts
-    second: {fileID: 2100000, guid: 5564efd984c90d04784250909fa61a91, type: 2}
+    second: {fileID: 2100000, guid: 63f98028d42acea4c804cbd44c1d60e2, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: af54458d0e334454485356c9e6fc84f6
-timeCreated: 1527065522
+guid: 39ff2da4052cd744cbaf1070dbaa1fdd
+timeCreated: 1527063380
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -42,12 +42,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: bc8be2cc107b51245a30c14cd0ef3aaa, type: 2}
+    second: {fileID: 2100000, guid: e846020ac45beee469e755c541be112c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.005
-    second: {fileID: 2100000, guid: 876939597f8ce69469fab424b4cf8b83, type: 2}
+    second: {fileID: 2100000, guid: 68d8122475634c04a87923679b7a6c0e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
