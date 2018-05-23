@@ -22,7 +22,7 @@ public class SegmentCreator : MonoBehaviour
         var child = new GameObject();
         child.transform.position = pos;
         child.transform.parent = parentGO.transform;
-        child.transform.localRotation = Quaternion.identity;
+        child.transform.rotation = transform.rotation;
         child.name = "childPinapple";
         representations.Add(Instantiate(Representation, pos, Quaternion.identity));
 

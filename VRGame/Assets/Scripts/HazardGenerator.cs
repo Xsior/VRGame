@@ -14,10 +14,12 @@ public class HazardGenerator : MonoBehaviour
 
     [Header("Spawning info")]
     public float startSpeed = 7;
+    public float speedIncrease = 0.01f;
     public float spawningDistance = 35;
     public float PlayerHeight = 1.7f;
     public float wallSpawnHeight = 2.196f;
     public float distanceBetweenSegments = 4;
+
 
     [Header("Timing")]
     public float distanceBetweenRandomBlocks = 3f;
@@ -102,7 +104,7 @@ public class HazardGenerator : MonoBehaviour
                 GenerateBlock();
             }
 
-            currentSpeed += 0.005f;
+            currentSpeed += speedIncrease;
             //if (TimeToNext > 1.5f)
             //    TimeToNext -= 0.02f;
         }
