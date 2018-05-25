@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CubeCollision : MonoBehaviour
 {
+    public string collisionTag;
     public float destroyTimeout = 0.1f;
     public IntReference score;
     private ParticleSystem particles;
@@ -14,7 +15,7 @@ public class CubeCollision : MonoBehaviour
 
     private void OnCollisionEnter (Collision collision)
     {
-        if (!collision.gameObject.CompareTag("Hand")) {
+        if (!collision.gameObject.CompareTag(collisionTag)) {
             return;
         }
 
