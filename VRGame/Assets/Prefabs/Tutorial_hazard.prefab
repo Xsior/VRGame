@@ -490,6 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42bc3547a23024f418f5c7ca23f5ea85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionTag: Hand
   destroyTimeout: 1
   score:
     useConstantValue: 0
