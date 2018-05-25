@@ -8,9 +8,11 @@ public class Tutorial : MonoBehaviour
     public HazardGenerator hazardGenerator;
     public GameObject tutorialUI;
     public GameObject[] tutorialTexts;
+    public GameObject watemelonUI;
 
     [Space]
-    public GameObject hazardPrefab;
+    public GameObject pinapplePrefab;
+    public GameObject watermelonPrefab;
     public Transform hazardSpawnPoint;
 
     [Header("Tutorial parameters")]
@@ -18,6 +20,7 @@ public class Tutorial : MonoBehaviour
     public float hazardAppearenceTime;
 
     private bool isHazardDestroyed;
+    private WaitUntil waitForHazardDestroy;
 
     public void OnHazardDestroyed()
     {
@@ -27,6 +30,11 @@ public class Tutorial : MonoBehaviour
     private void Start()
     {
         StartCoroutine(TutorialCoroutine());
+    }
+
+    private void Awake()
+    {
+        waitForHazardDestroy = new WaitUntil(IsHazardDestroyed);
     }
 
     private IEnumerator TutorialCoroutine()
@@ -42,11 +50,30 @@ public class Tutorial : MonoBehaviour
 
         yield return new WaitForSeconds(hazardAppearenceTime);
 
-        Instantiate(hazardPrefab, hazardSpawnPoint.position, Quaternion.identity);
+        Instantiate(pinapplePrefab, hazardSpawnPoint.position, Quaternion.identity);
 
-        yield return new WaitUntil(() => isHazardDestroyed);
+        yield return waitForHazardDestroy;
+
+        isHazardDestroyed = false;
+
+        yield return new WaitForSeconds(1f);
+
+        watemelonUI.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+
+        watemelonUI.SetActive(false);
+
+        Instantiate(watermelonPrefab, hazardSpawnPoint.position, watermelonPrefab.transform.rotation);
+
+        yield return waitForHazardDestroy;
 
         tutorialUI.SetActive(false);
         hazardGenerator.enabled = true;
+    }
+
+    private bool IsHazardDestroyed()
+    {
+        return isHazardDestroyed;
     }
 }
