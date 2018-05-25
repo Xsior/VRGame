@@ -42,7 +42,7 @@ public class BackWallCollision : MonoBehaviour
         for(int i =0; i < slicesPerHP; i++)
         {
             children[i].isKinematic = false;
-            children[i].AddForce(new Vector3(-800,100, 0));
+            children[i].AddForce(new Vector3(-800,500, 0));
             Destroy(children[i], 3f);
             children.RemoveAt(i);
             
