@@ -23,15 +23,15 @@ GameObject:
   - component: {fileID: 124946510999130748}
   - component: {fileID: 54796624595939106}
   - component: {fileID: 135638480594939318}
-  - component: {fileID: 114196518454792630}
   - component: {fileID: 114354814315418442}
   - component: {fileID: 114560890704093268}
   - component: {fileID: 114532903296458268}
   - component: {fileID: 114701525962312130}
-  - component: {fileID: 114209234621618852}
+  - component: {fileID: 114632123420397814}
+  - component: {fileID: 114048630310523016}
   m_Layer: 8
   m_Name: Camera (eye)
-  m_TagString: MainCamera
+  m_TagString: Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,10 +124,9 @@ GameObject:
   - component: {fileID: 92913950147974736}
   - component: {fileID: 135367702172201358}
   - component: {fileID: 54902190361483544}
-  - component: {fileID: 114566689483128844}
   m_Layer: 8
   m_Name: Camera (head)
-  m_TagString: MainCamera
+  m_TagString: Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -671,6 +670,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114048630310523016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034746360504410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 4520731416601518}
+  _ears: {fileID: 4370102854446170}
+  wireframe: 0
 --- !u!114 &114057606982649092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -742,32 +755,6 @@ MonoBehaviour:
   right: {fileID: 1570083193025014}
   objects: []
   assignAllBeforeIdentified: 0
---- !u!114 &114196518454792630
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034746360504410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78bc1fe3f964cbc4aad7063fa18b447b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onPlayerFailed: {fileID: 11400000, guid: 0a88b21f0b320dd47ab3949d1c841cc6, type: 2}
---- !u!114 &114209234621618852
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034746360504410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 4520731416601518}
-  _ears: {fileID: 4370102854446170}
-  wireframe: 0
 --- !u!114 &114354814315418442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -904,18 +891,6 @@ MonoBehaviour:
         m_CallState: 0
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114566689483128844
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608070448539626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78bc1fe3f964cbc4aad7063fa18b447b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onPlayerFailed: {fileID: 11400000, guid: 0a88b21f0b320dd47ab3949d1c841cc6, type: 2}
 --- !u!114 &114592058576967202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -929,6 +904,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   origin: {fileID: 0}
+--- !u!114 &114632123420397814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034746360504410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78bc1fe3f964cbc4aad7063fa18b447b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 8192
+  onPlayerFailed: {fileID: 11400000, guid: 0a88b21f0b320dd47ab3949d1c841cc6, type: 2}
 --- !u!114 &114659496368641644
 MonoBehaviour:
   m_ObjectHideFlags: 1
