@@ -8,6 +8,7 @@ public class HazardGenerator : MonoBehaviour
     public List<GameObject> walls;
     public List<GameObject> blocks;
     public GameObject block;
+    public Camera VrHead;
 
     //This is never used. Remove?
     [HideInInspector] public float TimeToNext = 3.5f;
@@ -81,7 +82,7 @@ public class HazardGenerator : MonoBehaviour
     {
         currentSpeed = startSpeed;
         toNextWall = blocksBeforeTheWall;
-        PlayerHeight = Camera.main.transform.localPosition.y;
+        PlayerHeight = VrHead.transform.position.y;
         if (PlayerHeight < 1.2f)
             PlayerHeight = 1.2f;
         else if (PlayerHeight > 2f)

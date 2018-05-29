@@ -5,8 +5,10 @@ using System.Collections.Generic;
 public class BackWallCollision : MonoBehaviour
 {
     public GameEvent onPlayerFailed;
+    public Transform swordIndicator;
     public int hp = 9;
     private List<Rigidbody> children = new List<Rigidbody>();
+    private List<Rigidbody> indictaorChildren = new List<Rigidbody>();
     private int slicesPerHP;
     private void OnTriggerEnter(Collider other)
     {
@@ -22,10 +24,12 @@ public class BackWallCollision : MonoBehaviour
         }
     }
 
-    void Awake()
+    void Start()
     {
         for (int i = 0; i < transform.childCount; i++)
             children.Add(transform.GetChild(i).gameObject.GetComponent<Rigidbody>());
+        for (int i = 0; i < swordIndicator.childCount; i++)
+            indictaorChildren.Add(transform.GetChild(i).gameObject.GetComponent<Rigidbody>());
         slicesPerHP = Mathf.FloorToInt( children.Count / hp);
 
     }
@@ -45,14 +49,15 @@ public class BackWallCollision : MonoBehaviour
             children[i].AddForce(new Vector3(-800,500, 0));
             Destroy(children[i], 3f);
             children.RemoveAt(i);
-            
+            Destroy(indictaorChildren[i]);
+            indictaorChildren.RemoveAt(i);
         }
-        foreach (Rigidbody c in children)
-        {
+        //foreach (Rigidbody c in children)
+        //{
             //c.isKinematic = false;
             //c.gameObject.GetComponent<Collider>().isTrigger = false;
             //c.AddForce(new Vector3(0, 5, 50));
             //c.AddExplosionForce(3000, new Vector3(13, 0.2f, 0), 0);
-        }
+        //}
     }
 }
