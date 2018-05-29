@@ -7,8 +7,8 @@ public class BackWallCollision : MonoBehaviour
     public GameEvent onPlayerFailed;
     public Transform swordIndicator;
     public int hp = 9;
-    private List<Rigidbody> children = new List<Rigidbody>();
-    private List<Rigidbody> indictaorChildren = new List<Rigidbody>();
+    private List<GameObject> children = new List<GameObject>();
+    private List<GameObject> indictaorChildren = new List<GameObject>();
     private int slicesPerHP;
     private void OnTriggerEnter(Collider other)
     {
@@ -27,9 +27,9 @@ public class BackWallCollision : MonoBehaviour
     void Start()
     {
         for (int i = 0; i < transform.childCount; i++)
-            children.Add(transform.GetChild(i).gameObject.GetComponent<Rigidbody>());
+            children.Add(transform.GetChild(i).gameObject);
         for (int i = 0; i < swordIndicator.childCount; i++)
-            indictaorChildren.Add(transform.GetChild(i).gameObject.GetComponent<Rigidbody>());
+            indictaorChildren.Add(swordIndicator.GetChild(i).gameObject);
         slicesPerHP = Mathf.FloorToInt( children.Count / hp);
 
     }
@@ -45,8 +45,8 @@ public class BackWallCollision : MonoBehaviour
         }
         for(int i =0; i < slicesPerHP; i++)
         {
-            children[i].isKinematic = false;
-            children[i].AddForce(new Vector3(-800,500, 0));
+            children[i].GetComponent<Rigidbody>().isKinematic = false;
+            children[i].GetComponent<Rigidbody>().AddForce(new Vector3(-800,300, 0));
             Destroy(children[i], 3f);
             children.RemoveAt(i);
             Destroy(indictaorChildren[i]);
