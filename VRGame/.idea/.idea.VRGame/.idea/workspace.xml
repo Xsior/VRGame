@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47683818-aa44-48e0-8f2f-d053a4566fed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeatHazeObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/ToonShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ToonShader.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,15 +45,15 @@
       <file leaf-file-name="Distortion.shader" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Materials/Distortion.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="191">
+              <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
               <folding>
-                <marker date="1526924811478" expanded="true" signature="29:2180" ph="{...}" />
-                <marker date="1526924811478" expanded="true" signature="46:153" ph="{...}" />
-                <marker date="1526924811478" expanded="true" signature="166:2178" ph="{...}" />
-                <marker date="1526924811478" expanded="true" signature="240:295" ph="{...}" />
-                <marker date="1526924811478" expanded="true" signature="315:2175" ph="{...}" />
-                <marker date="1526924811478" expanded="true" signature="392:2166" ph="{...}" />
+                <marker date="1526924854328" expanded="true" signature="29:2137" ph="{...}" />
+                <marker date="1526924854328" expanded="true" signature="46:153" ph="{...}" />
+                <marker date="1526924854328" expanded="true" signature="166:2135" ph="{...}" />
+                <marker date="1526924854328" expanded="true" signature="240:295" ph="{...}" />
+                <marker date="1526924854328" expanded="true" signature="315:2132" ph="{...}" />
+                <marker date="1526924854328" expanded="true" signature="392:2123" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -76,9 +72,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/CameraDirectionTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Effects/GlassRefraction/Shaders/GlassStainedBumpDistort.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/ToonShader.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Materials/HeatHazeShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Distortion.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeatHazeObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -147,11 +141,6 @@
               <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
               <item name="" type="1045f7f1:UnityExplorerNode" />
             </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -191,12 +180,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526896959394</updated>
-      <workItem from="1526896977299" duration="14196000" />
+      <workItem from="1526896977299" duration="14984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14196000" />
+    <option name="totallyTimeSpent" value="14984000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -269,13 +258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-379">
           <caret column="30" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <marker date="1526916673451" expanded="true" signature="32:1083" ph="{...}" />
-            <marker date="1526916673451" expanded="true" signature="47:159" ph="{...}" />
-            <marker date="1526916673451" expanded="true" signature="172:1081" ph="{...}" />
-            <marker date="1526916673451" expanded="true" signature="278:1078" ph="{...}" />
-            <marker date="1526916673451" expanded="true" signature="292:1069" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -283,21 +265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
-          <folding>
-            <marker date="1524864054000" expanded="true" signature="0:129" ph="/* Per pixel bumped refraction. ... */" />
-            <marker date="1524864054000" expanded="true" signature="169:2666" ph="{...}" />
-            <marker date="1524864054000" expanded="true" signature="182:319" ph="{...}" />
-            <marker date="1524864054000" expanded="true" signature="330:2663" ph="{...}" />
-            <marker date="1524864054000" expanded="true" signature="472:2430" ph="{...}" />
-            <marker date="1524864054000" expanded="true" signature="477:603" ph="/* This pass grabs the screen behind the object into a texture. ... */" />
-            <marker date="1524864054000" expanded="true" signature="615:670" ph="{...}" />
-            <marker date="1524864054000" expanded="true" signature="676:776" ph="/* Main pass: Take the texture grabbed above and use the bumpmap to perturb it ... */" />
-            <marker date="1524864054000" expanded="true" signature="784:2427" ph="{...}" />
-            <marker date="1524864054000" expanded="true" signature="849:2418" ph="{...}" />
-            <marker date="1524864054000" expanded="true" signature="2433:2549" ph="/* ------------------------------------------------------------------ ... */" />
-            <marker date="1524864054000" expanded="true" signature="2562:2661" ph="{...}" />
-            <marker date="1524864054000" expanded="true" signature="2593:2658" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -316,15 +283,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Materials/Distortion.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="191">
+          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
           <folding>
-            <marker date="1526924811478" expanded="true" signature="29:2180" ph="{...}" />
-            <marker date="1526924811478" expanded="true" signature="46:153" ph="{...}" />
-            <marker date="1526924811478" expanded="true" signature="166:2178" ph="{...}" />
-            <marker date="1526924811478" expanded="true" signature="240:295" ph="{...}" />
-            <marker date="1526924811478" expanded="true" signature="315:2175" ph="{...}" />
-            <marker date="1526924811478" expanded="true" signature="392:2166" ph="{...}" />
+            <marker date="1526924854328" expanded="true" signature="29:2137" ph="{...}" />
+            <marker date="1526924854328" expanded="true" signature="46:153" ph="{...}" />
+            <marker date="1526924854328" expanded="true" signature="166:2135" ph="{...}" />
+            <marker date="1526924854328" expanded="true" signature="240:295" ph="{...}" />
+            <marker date="1526924854328" expanded="true" signature="315:2132" ph="{...}" />
+            <marker date="1526924854328" expanded="true" signature="392:2123" ph="{...}" />
           </folding>
         </state>
       </provider>

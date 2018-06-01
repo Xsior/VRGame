@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Knife_blade
+  m_Name: Two tones
   m_Shader: {fileID: 4800000, guid: 013de67027113f44d81fc2b0a2f2a212, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -62,27 +62,30 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DiffuseThreshold: 0.069
+    - _DiffuseThreshold: 0.431
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LitOutlineThickness: 0.085
+    - _LitOutlineThickness: 0.139
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineThickness: 0.003
+    - _OutlineOn: 0
+    - _OutlineThickness: 0.5
     - _Parallax: 0.02
-    - _Shininess: 1
+    - _Sample: 0.051
+    - _ShadingOffset: 0
+    - _Shininess: 13.79
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UnlitOutlineThickness: 0.27
+    - _UnlitOutlineThickness: 0.253
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.43382353, g: 0.43307555, b: 0.43063363, a: 1}
+    - _Color: {r: 0.90588236, g: 0.75686276, b: 0.21960784, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.6985294, g: 0.6985294, b: 0.6985294, a: 1}
-    - _UnlitColor: {r: 0.2205882, g: 0.21589008, b: 0.19625862, a: 1}
+    - _OutlineColor: {r: 0.103773594, g: 0.1023051, b: 0.10357395, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnlitColor: {r: 0.5566038, g: 0.44664833, b: 0.14440194, a: 1}

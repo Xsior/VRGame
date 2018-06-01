@@ -10,7 +10,6 @@
         <e p="Materials" t="Include">
           <e p="Distortion.shader" t="Include" />
           <e p="FadeOut.shader" t="Include" />
-          <e p="HeatHazeShader.shader" t="Include" />
           <e p="ToonShader.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
