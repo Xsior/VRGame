@@ -95,15 +95,25 @@
           </e>
           <e p="Grabbing.cs" t="Include" />
           <e p="HazardGenerator.cs" t="Include" />
+          <e p="Hazards" t="Include">
+            <e p="DefaultHazardStep.cs" t="Include" />
+            <e p="HazardManager.cs" t="Include" />
+            <e p="HazardStep.cs" t="Include" />
+            <e p="Spawner.cs" t="Include" />
+          </e>
           <e p="HeadCollision.cs" t="Include" />
           <e p="HeatHazeObject.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="IFadeOutListener.cs" t="Include" />
           </e>
           <e p="PauseMenu.cs" t="Include" />
+          <e p="Rotator.cs" t="Include" />
           <e p="SceneReloading.cs" t="Include" />
           <e p="ScoreboardManager.cs" t="Include" />
+          <e p="SegmentCreator.cs" t="Include" />
+          <e p="SegmentCreatorController.cs" t="Include" />
           <e p="TimeStopper.cs" t="Include" />
+          <e p="Tutorial.cs" t="Include" />
           <e p="VRControllerInput.cs" t="Include" />
           <e p="Walls" t="Include">
             <e p="HoleInTheWall.cs" t="Include" />
@@ -111,6 +121,10 @@
             <e p="Wallediting.cs" t="Include" />
             <e p="WallWithTheHole.cs" t="Include" />
           </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="Outline.shader" t="Include" />
+          <e p="ToonShader_Final.shader" t="Include" />
         </e>
         <e p="SteamVR" t="Include">
           <e p="Editor" t="Include">
