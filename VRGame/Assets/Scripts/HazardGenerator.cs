@@ -79,8 +79,8 @@ public class HazardGenerator : MonoBehaviour
     }
     private void GenerateWatermelon()
     {
-        float rX = Random.Range(-0.6f, 0.6f);
-        float rY = Random.Range(PlayerHeight - 0.3f, PlayerHeight - 0.1f);
+        float rX = Random.Range(-0.8f, 0.8f);
+        float rY = Random.Range(PlayerHeight - 0.3f, PlayerHeight + 0.05f);
 
         var blockInstance = Instantiate(watermelon, Vector3.zero, transform.rotation, transform);
         blockInstance.transform.localPosition = new Vector3(rX, rY, spawningDistance);
