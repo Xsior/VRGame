@@ -19,6 +19,10 @@
           <e p="CameraLocomotion.cs" t="Include" />
           <e p="ConstantVelocity.cs" t="Include" />
           <e p="CubeCollision.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="SegmentCreator.cs" t="Include" />
+            <e p="SegmentCreatorController.cs" t="Include" />
+          </e>
           <e p="Framework" t="Include">
             <e p="AssetWrapper.cs" t="Include" />
             <e p="Data" t="Include">
@@ -106,12 +110,12 @@
           <e p="Interfaces" t="Include">
             <e p="IFadeOutListener.cs" t="Include" />
           </e>
+          <e p="LaserPointer.cs" t="Include" />
+          <e p="MushroomBomb.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
           <e p="SceneReloading.cs" t="Include" />
           <e p="ScoreboardManager.cs" t="Include" />
-          <e p="SegmentCreator.cs" t="Include" />
-          <e p="SegmentCreatorController.cs" t="Include" />
           <e p="TimeStopper.cs" t="Include" />
           <e p="Tutorial.cs" t="Include" />
           <e p="VRControllerInput.cs" t="Include" />
