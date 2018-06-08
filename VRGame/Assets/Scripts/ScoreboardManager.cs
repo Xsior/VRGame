@@ -7,7 +7,7 @@ using Framework.References;
 
 public class ScoreboardManager : MonoBehaviour
 {
-    public Text scoreText;
+    public TMPro.TMP_Text scoreText;
     
 
     public IntReference score;

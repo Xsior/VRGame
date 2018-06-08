@@ -8,6 +8,7 @@ public class HazardGenerator : MonoBehaviour
     public List<GameObject> walls;
     public List<GameObject> blocks;
     public GameObject block;
+    public GameObject watermelon;
     public Camera VrHead;
 
     //This is never used. Remove?
@@ -76,7 +77,16 @@ public class HazardGenerator : MonoBehaviour
         g.GetComponent<ConstantVelocity>().velocity = new Vector3(0, 0, -currentSpeed);
         timer = distanceBetweenWalls / currentSpeed;
     }
+    private void GenerateWatermelon()
+    {
+        float rX = Random.Range(-0.6f, 0.6f);
+        float rY = Random.Range(PlayerHeight - 0.3f, PlayerHeight - 0.1f);
 
+        var blockInstance = Instantiate(watermelon, Vector3.zero, transform.rotation, transform);
+        blockInstance.transform.localPosition = new Vector3(rX, rY, spawningDistance);
+        blockInstance.GetComponent<ConstantVelocity>().velocity = new Vector3(0, 0, -currentSpeed);
+        timer = distanceBetweenWalls / currentSpeed;
+    }
     void Start ()
     {
         currentSpeed = startSpeed;
@@ -97,7 +107,7 @@ public class HazardGenerator : MonoBehaviour
 
             if (toNextWall <= 0) {
                 toNextWall = blocksBeforeTheWall;
-                GenerateWall();
+                GenerateWatermelon();
             } else {
                 GenerateBlock();
             }
