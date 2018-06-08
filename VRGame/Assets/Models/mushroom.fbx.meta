@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 5b4fbb2a7ac830146b4bec99f3b49a40
-timeCreated: 1528459488
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -12,6 +10,7 @@ ModelImporter:
     100008: //RootNode
     100010: Sphere
     100012: Sphere.001
+    100014: Cylinder.000
     400000: Camera
     400002: Cylinder
     400004: Cylinder.001
@@ -19,26 +18,31 @@ ModelImporter:
     400008: //RootNode
     400010: Sphere
     400012: Sphere.001
+    400014: Cylinder.000
     2000000: Camera
     2300000: Cylinder
     2300002: Cylinder.001
     2300004: Sphere
     2300006: Sphere.001
+    2300008: Cylinder.000
     3300000: Cylinder
     3300002: Cylinder.001
     3300004: Sphere
     3300006: Sphere.001
+    3300008: Cylinder.000
     4300000: Cylinder.001
     4300002: Sphere.001
     4300004: Cylinder
     4300006: Sphere
+    4300008: Cylinder.000
     10800000: Lamp
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: e846020ac45beee469e755c541be112c, type: 2}
+    second: {fileID: 2100000, guid: e443613740c85704dbc9dd483d4c758b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -57,6 +61,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -81,6 +86,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
