@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="47683818-aa44-48e0-8f2f-d053a4566fed" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CustomAssets/HazardSteps/Step_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CustomAssets/HazardSteps/Step_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityPackageManager/manifest.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,48 +16,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CameraDirectionTest.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/CameraDirectionTest.cs">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MushroomBomb.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MushroomBomb.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+            <state relative-caret-position="255">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
-                <marker date="1526903036035" expanded="false" signature="6:78" ph="..." />
-                <marker date="1526903036035" expanded="true" signature="128:259" ph="{...}" />
-                <marker date="1526903036035" expanded="true" signature="157:257" ph="{...}" />
+                <marker date="1528468270057" expanded="false" signature="6:102" ph="..." />
+                <marker date="1528468270057" expanded="true" signature="145:580" ph="{...}" />
+                <marker date="1528468270057" expanded="true" signature="317:504" ph="{...}" />
+                <marker date="1528468270057" expanded="true" signature="371:387" ph="{...}" />
+                <marker date="1528468270057" expanded="true" signature="527:578" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeatHazeObject.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeatHazeObject.cs">
+      <file leaf-file-name="Rotator.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rotator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+            <state relative-caret-position="45">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding>
-                <marker date="1526920836543" expanded="true" signature="46:611" ph="{...}" />
-                <marker date="1526920836543" expanded="true" signature="96:609" ph="{...}" />
-                <marker date="1526920836543" expanded="true" signature="272:485" ph="{...}" />
-                <marker date="1526920836543" expanded="true" signature="515:603" ph="{...}" />
+                <marker date="1528467860295" expanded="false" signature="6:78" ph="..." />
+                <marker date="1528467860295" expanded="true" signature="116:312" ph="{...}" />
+                <marker date="1528467860295" expanded="true" signature="242:310" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Distortion.shader" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Materials/Distortion.shader">
+      <file leaf-file-name="CubeCollision.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            <state relative-caret-position="135">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding>
-                <marker date="1526924854328" expanded="true" signature="29:2137" ph="{...}" />
-                <marker date="1526924854328" expanded="true" signature="46:153" ph="{...}" />
-                <marker date="1526924854328" expanded="true" signature="166:2135" ph="{...}" />
-                <marker date="1526924854328" expanded="true" signature="240:295" ph="{...}" />
-                <marker date="1526924854328" expanded="true" signature="315:2132" ph="{...}" />
-                <marker date="1526924854328" expanded="true" signature="392:2123" ph="{...}" />
+                <marker date="1527862102331" expanded="false" signature="6:70" ph="..." />
+                <marker date="1527862102331" expanded="true" signature="114:1142" ph="{...}" />
+                <marker date="1527862102331" expanded="true" signature="381:1009" ph="{...}" />
+                <marker date="1527862102331" expanded="true" signature="448:479" ph="{...}" />
+                <marker date="1527862102331" expanded="true" signature="760:811" ph="{...}" />
+                <marker date="1527862102331" expanded="true" signature="1036:1140" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -72,9 +77,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/CameraDirectionTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/HazardStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MushroomBomb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HazardGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BlocksSegment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/DefaultHazardStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/HazardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/ToonShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/Distortion.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeatHazeObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -84,10 +98,19 @@
         <option value="$PROJECT_DIR$/Assets/Materials/HeatHazeShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeatHazeObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Materials/Distortion.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hazards/TestStep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HazardGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hazards/HazardStep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hazards/HazardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hazards/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hazards/DefaultHazardStep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MushroomBomb.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="54" />
     <option name="y" value="-26" />
     <option name="width" value="1346" />
@@ -99,6 +122,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
+            </path>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
       <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
@@ -124,32 +164,11 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-hidden-items" value="false" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="TooSha&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Materials/ToonShader.shader&#10;Col&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/CubeCollision.cs&#10;Rota&#9;null&#9;null&#10;HazaGe&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -181,11 +200,13 @@
       <option name="presentableId" value="Default" />
       <updated>1526896959394</updated>
       <workItem from="1526896977299" duration="14984000" />
+      <workItem from="1527863832233" duration="5791000" />
+      <workItem from="1528467426895" duration="841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14984000" />
+    <option name="totallyTimeSpent" value="21616000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -201,26 +222,26 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="UnityProjectConfiguration" isUnityUI="true" />
@@ -228,9 +249,237 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/HazardManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding>
+            <marker date="1527868885972" expanded="false" signature="6:78" ph="..." />
+            <marker date="1527868885972" expanded="true" signature="123:1171" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="177:235" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="450:725" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="489:722" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="545:563" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="593:627" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="685:718" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="749:1022" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="840:953" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="982:1019" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="1045:1169" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="1077:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/HazardStep.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1527868309318" expanded="false" signature="6:78" ph="..." />
+            <marker date="1527868309318" expanded="true" signature="132:328" ph="{...}" />
+            <marker date="1527868309318" expanded="true" signature="166:204" ph="{...}" />
+            <marker date="1527868309318" expanded="true" signature="287:326" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HazardGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="75" selection-end-column="87" />
+          <folding>
+            <marker date="1528466636164" expanded="false" signature="6:78" ph="..." />
+            <marker date="1528466636164" expanded="true" signature="124:3964" ph="{...}" />
+            <marker date="1528466636164" expanded="true" signature="3755:3772" ph="{...}" />
+            <marker date="1528466636164" expanded="true" signature="3755:3962" ph="{...}" />
+            <marker date="1528466636164" expanded="true" signature="3883:3946" ph="/* if (TimeToNext &gt; 1.5f) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/Spawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1527869025034" expanded="true" signature="6:81" ph="..." />
+            <marker date="1527869025034" expanded="true" signature="614:1020" ph="{...}" />
+            <marker date="1527869025034" expanded="true" signature="1057:1554" ph="{...}" />
+            <marker date="1527869025034" expanded="true" signature="1595:1977" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/DefaultHazardStep.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding>
+            <marker date="1527869182339" expanded="true" signature="99:120" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CameraDirectionTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeatHazeObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Distortion.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CameraDirectionTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/HeatHazeShader.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Effects/GlassRefraction/Shaders/GlassStainedBumpDistort.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeatHazeObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Distortion.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/TestStep.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BlocksSegment.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HazardGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+          <folding>
+            <marker date="1528466636164" expanded="false" signature="6:78" ph="..." />
+            <marker date="1528466636164" expanded="true" signature="124:3964" ph="{...}" />
+            <marker date="1528466636164" expanded="true" signature="3755:3772" ph="{...}" />
+            <marker date="1528466636164" expanded="true" signature="3755:3962" ph="{...}" />
+            <marker date="1528466636164" expanded="true" signature="3883:3946" ph="/* if (TimeToNext &gt; 1.5f) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/Spawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1527869025034" expanded="true" signature="6:81" ph="..." />
+            <marker date="1527869025034" expanded="true" signature="614:1020" ph="{...}" />
+            <marker date="1527869025034" expanded="true" signature="1057:1554" ph="{...}" />
+            <marker date="1527869025034" expanded="true" signature="1595:1977" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/HazardManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding>
+            <marker date="1527868885972" expanded="false" signature="6:78" ph="..." />
+            <marker date="1527868885972" expanded="true" signature="123:1171" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="177:235" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="450:725" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="489:722" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="545:563" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="593:627" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="685:718" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="749:1022" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="840:953" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="982:1019" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="1045:1169" ph="{...}" />
+            <marker date="1527868885972" expanded="true" signature="1077:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/HazardStep.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1527868309318" expanded="false" signature="6:78" ph="..." />
+            <marker date="1527868309318" expanded="true" signature="132:328" ph="{...}" />
+            <marker date="1527868309318" expanded="true" signature="166:204" ph="{...}" />
+            <marker date="1527868309318" expanded="true" signature="287:326" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/DefaultHazardStep.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding>
+            <marker date="1527869182339" expanded="true" signature="99:120" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Walls/Wallediting.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rotator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <marker date="1528467860295" expanded="false" signature="6:78" ph="..." />
+            <marker date="1528467860295" expanded="true" signature="116:312" ph="{...}" />
+            <marker date="1528467860295" expanded="true" signature="242:310" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <marker date="1527862102331" expanded="false" signature="6:70" ph="..." />
+            <marker date="1527862102331" expanded="true" signature="114:1142" ph="{...}" />
+            <marker date="1527862102331" expanded="true" signature="381:1009" ph="{...}" />
+            <marker date="1527862102331" expanded="true" signature="448:479" ph="{...}" />
+            <marker date="1527862102331" expanded="true" signature="760:811" ph="{...}" />
+            <marker date="1527862102331" expanded="true" signature="1036:1140" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Materials/ToonShader.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="-79">
           <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
           <folding>
             <marker date="1526908268607" expanded="true" signature="32:3958" ph="{...}" />
@@ -242,56 +491,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/CameraDirectionTest.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MushroomBomb.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+        <state relative-caret-position="255">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
-            <marker date="1526903036035" expanded="false" signature="6:78" ph="..." />
-            <marker date="1526903036035" expanded="true" signature="128:259" ph="{...}" />
-            <marker date="1526903036035" expanded="true" signature="157:257" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/HeatHazeShader.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-379">
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Effects/GlassRefraction/Shaders/GlassStainedBumpDistort.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HeatHazeObject.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-          <folding>
-            <marker date="1526920836543" expanded="true" signature="46:611" ph="{...}" />
-            <marker date="1526920836543" expanded="true" signature="96:609" ph="{...}" />
-            <marker date="1526920836543" expanded="true" signature="272:485" ph="{...}" />
-            <marker date="1526920836543" expanded="true" signature="515:603" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/Distortion.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-          <folding>
-            <marker date="1526924854328" expanded="true" signature="29:2137" ph="{...}" />
-            <marker date="1526924854328" expanded="true" signature="46:153" ph="{...}" />
-            <marker date="1526924854328" expanded="true" signature="166:2135" ph="{...}" />
-            <marker date="1526924854328" expanded="true" signature="240:295" ph="{...}" />
-            <marker date="1526924854328" expanded="true" signature="315:2132" ph="{...}" />
-            <marker date="1526924854328" expanded="true" signature="392:2123" ph="{...}" />
+            <marker date="1528468270057" expanded="false" signature="6:102" ph="..." />
+            <marker date="1528468270057" expanded="true" signature="145:580" ph="{...}" />
+            <marker date="1528468270057" expanded="true" signature="317:504" ph="{...}" />
+            <marker date="1528468270057" expanded="true" signature="371:387" ph="{...}" />
+            <marker date="1528468270057" expanded="true" signature="527:578" ph="{...}" />
           </folding>
         </state>
       </provider>

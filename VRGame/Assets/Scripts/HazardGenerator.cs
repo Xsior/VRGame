@@ -30,7 +30,6 @@ public class HazardGenerator : MonoBehaviour
 
     private float currentSpeed;
     private float timer = 2;
-    private float timePassed;
     private float toNextWall;
 
     private void GenerateBlock ()
@@ -102,8 +101,6 @@ public class HazardGenerator : MonoBehaviour
 
     void FixedUpdate ()
     {
-        timePassed += Time.fixedDeltaTime;
-
         if (timer > 0) {
             timer -= Time.fixedDeltaTime;
         } else {
