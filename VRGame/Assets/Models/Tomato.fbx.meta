@@ -10,6 +10,12 @@ ModelImporter:
     100008: Plane.002
     100010: Sphere
     100012: //RootNode
+    100014: Sphere_MeshPart0
+    100016: Sphere_MeshPart1
+    100018: Sphere_MeshPart2
+    100020: Sphere_MeshPart3
+    100022: Sphere_MeshPart4
+    100024: Sphere_MeshPart5
     400000: Camera
     400002: Lamp
     400004: Plane
@@ -17,19 +23,43 @@ ModelImporter:
     400008: Plane.002
     400010: Sphere
     400012: //RootNode
+    400014: Sphere_MeshPart0
+    400016: Sphere_MeshPart1
+    400018: Sphere_MeshPart2
+    400020: Sphere_MeshPart3
+    400022: Sphere_MeshPart4
+    400024: Sphere_MeshPart5
     2000000: Camera
     2300000: Plane
     2300002: Plane.001
     2300004: Plane.002
     2300006: Sphere
+    2300008: Sphere_MeshPart0
+    2300010: Sphere_MeshPart1
+    2300012: Sphere_MeshPart2
+    2300014: Sphere_MeshPart3
+    2300016: Sphere_MeshPart4
+    2300018: Sphere_MeshPart5
     3300000: Plane
     3300002: Plane.001
     3300004: Plane.002
     3300006: Sphere
+    3300008: Sphere_MeshPart0
+    3300010: Sphere_MeshPart1
+    3300012: Sphere_MeshPart2
+    3300014: Sphere_MeshPart3
+    3300016: Sphere_MeshPart4
+    3300018: Sphere_MeshPart5
     4300000: Plane.002
     4300002: Plane.001
     4300004: Plane
     4300006: Sphere
+    4300008: Sphere_MeshPart0
+    4300010: Sphere_MeshPart1
+    4300012: Sphere_MeshPart2
+    4300014: Sphere_MeshPart3
+    4300016: Sphere_MeshPart4
+    4300018: Sphere_MeshPart5
     10800000: Lamp
     2186277476908879412: ImportLogs
   externalObjects:
@@ -71,7 +101,6 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -96,8 +125,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

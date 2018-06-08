@@ -13,11 +13,13 @@ public class CubeCollision : MonoBehaviour
 
     private Collider col;
 
-    private void OnCollisionEnter (Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collision");
         if (!collision.gameObject.CompareTag(collisionTag)) {
             return;
         }
+        Debug.Log("With hand");
 
         var grabbing = collision.gameObject.GetComponent<Grabbing>();
         grabbing?.HapticPulse();
