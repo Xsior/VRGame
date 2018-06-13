@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CameraFadeOut : MonoBehaviour
-{
+public class JuiceFadeIn : MonoBehaviour {
+
     public float fadeSpeed = 4;
     public Material fadeOutMaterial;
     private bool isTriggered;
 
-    public void FadeOut ()
+    public void FadeIn()
     {
-        if (isTriggered) {
+        if (isTriggered)
+        {
             return;
         }
 
@@ -19,10 +20,11 @@ public class CameraFadeOut : MonoBehaviour
         StartCoroutine(FadeOutCoroutine());
     }
 
-    private IEnumerator FadeOutCoroutine ()
+    private IEnumerator FadeOutCoroutine()
     {
         float progress = 0f;
-        while (progress < 1f) {
+        while (progress < 1f)
+        {
             fadeOutMaterial.SetFloat("_Progress", progress);
             progress += fadeSpeed * Time.deltaTime;
 
@@ -33,9 +35,10 @@ public class CameraFadeOut : MonoBehaviour
         SendFadeOutMessage();
     }
 
-    private void OnRenderImage (RenderTexture source, RenderTexture destination)
+    private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        if (!isTriggered) {
+        if (!isTriggered)
+        {
             Graphics.Blit(source, destination);
             return;
         }
