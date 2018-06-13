@@ -18,7 +18,7 @@ public class CubeCollision : MonoBehaviour, IHitListener
         grabbing?.HapticPulse();
 
         //Instantiate(particles, transform.position, Quaternion.identity);
-//        particles.Play();
+        particles.Play();
 //        foreach(MeshRenderer m in GetComponentsInChildren<MeshRenderer>())
 //        {
 //            m.enabled = false;
