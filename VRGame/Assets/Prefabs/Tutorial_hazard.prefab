@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 198681220509493064}
   - component: {fileID: 54881353150509862}
   - component: {fileID: 114297627212817464}
+  - component: {fileID: 114945137930798278}
   m_Layer: 0
   m_Name: Tutorial_hazard
   m_TagString: Untagged
@@ -235,7 +236,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1832103513248422}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.9673634, y: 7.9823866, z: -5.669782}
+  m_LocalPosition: {x: -11.282181, y: 6.1437364, z: -6.7778597}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4822801829056774}
@@ -561,13 +562,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42bc3547a23024f418f5c7ca23f5ea85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionTag: Hand
   destroyTimeout: 0.5
   score:
     useConstantValue: 0
     constantValue: 0
     variable: {fileID: 11400000, guid: 54a1f4e359ff8cc4795aadc4c1a71455, type: 2}
   onBlockCollision: {fileID: 11400000, guid: 42c0bae3dbdb54646b2f554dd5db77ce, type: 2}
+--- !u!114 &114945137930798278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1832103513248422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cd1ec36d5554344bec274a26f46fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionTag: Hand
 --- !u!136 &136137777442803626
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -641,7 +653,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 539150277
+  randomSeed: 1219571756
   InitialModule:
     serializedVersion: 3
     enabled: 1

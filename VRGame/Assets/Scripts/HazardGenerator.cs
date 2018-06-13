@@ -58,7 +58,7 @@ public class HazardGenerator : MonoBehaviour
         float rX = Random.Range(-0.6f, 0.6f);
         float rY = Random.Range(PlayerHeight - 0.6f, PlayerHeight + 0.4f);
 
-        var blockInstance = Instantiate(block, Vector3.zero, transform.rotation, transform);
+        var blockInstance = Instantiate(block, transform, false);
         var blockVelocity = blockInstance.GetComponent<ConstantVelocity>();
         blockInstance.transform.localPosition = new Vector3(rX, rY, spawningDistance);
         blockVelocity.velocity = new Vector3(0, 0, -currentSpeed);
