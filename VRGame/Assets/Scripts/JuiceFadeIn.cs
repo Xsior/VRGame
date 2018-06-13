@@ -22,17 +22,27 @@ public class JuiceFadeIn : MonoBehaviour {
 
     private IEnumerator FadeOutCoroutine()
     {
-        float progress = 0f;
-        while (progress < 1f)
+        float progress = 0.8f;
+        //while (progress < 0.6f)
+        //{
+        //    fadeOutMaterial.SetFloat("_Progress", progress);
+        //    progress += fadeSpeed*20 * Time.deltaTime;
+
+        //    yield return null;
+        //}
+
+        fadeOutMaterial.SetFloat("_Progress", 0.8f);
+
+        yield return new WaitForSeconds(0.2f);
+        while (progress > 0f)
         {
             fadeOutMaterial.SetFloat("_Progress", progress);
-            progress += fadeSpeed * Time.deltaTime;
+            progress -= fadeSpeed * Time.deltaTime;
 
             yield return null;
         }
-
-        fadeOutMaterial.SetFloat("_Progress", 1f);
-        SendFadeOutMessage();
+        fadeOutMaterial.SetFloat("_Progress", 0f);
+        isTriggered = false;
     }
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
@@ -43,7 +53,7 @@ public class JuiceFadeIn : MonoBehaviour {
             return;
         }
 
-        Graphics.Blit(source, destination, fadeOutMaterial, 0);
+        Graphics.Blit(source, destination, fadeOutMaterial);
     }
 
     private void SendFadeOutMessage()

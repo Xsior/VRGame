@@ -3,7 +3,8 @@
 	Properties
 	{
 		_MainTex("Texture", 2D) = "white" {}
-	_Progress("Progress", Range(0, 1)) = 0
+	_OverlayImage("Texture", 2D) = "white" {}
+	_Progress("Progress", Range(0, 1)) = 1
 	}
 		SubShader
 	{
@@ -41,13 +42,16 @@
 	}
 
 	sampler2D _MainTex;
-
-	float4 frag(v2f i) : SV_Target
+	sampler2D _OverlayImage;
+	fixed4 frag(v2f i) : SV_Target
 	{
-		float4 col = tex2D(_MainTex, i.uv);
-		col = float4(col.r,col.g,col.b,_Progress);
+		fixed4 col = tex2D(_MainTex, i.uv);
+		fixed4 overlayCol = tex2D(_OverlayImage, i.uv);
+		overlayCol.rgb = col.rgb * (1 - overlayCol.a) + overlayCol.rgb * overlayCol.a;
+		col = col * (1 - _Progress) + (overlayCol * _Progress);
 		return col;
 	}
+
 		ENDCG
 	}
 	}

@@ -35,7 +35,8 @@ public class CameraFadeOut : MonoBehaviour
 
     private void OnRenderImage (RenderTexture source, RenderTexture destination)
     {
-        if (!isTriggered) {
+        if (!isTriggered)
+        {
             Graphics.Blit(source, destination);
             return;
         }
