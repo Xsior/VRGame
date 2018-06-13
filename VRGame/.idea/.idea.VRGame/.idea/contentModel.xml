@@ -107,8 +107,10 @@
           </e>
           <e p="HeadCollision.cs" t="Include" />
           <e p="HeatHazeObject.cs" t="Include" />
+          <e p="HitBroadcaster.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="IFadeOutListener.cs" t="Include" />
+            <e p="IHitListener.cs" t="Include" />
           </e>
           <e p="LaserPointer.cs" t="Include" />
           <e p="MushroomBomb.cs" t="Include" />
@@ -116,6 +118,7 @@
           <e p="Rotator.cs" t="Include" />
           <e p="SceneReloading.cs" t="Include" />
           <e p="ScoreboardManager.cs" t="Include" />
+          <e p="TearingApart.cs" t="Include" />
           <e p="TimeStopper.cs" t="Include" />
           <e p="Tutorial.cs" t="Include" />
           <e p="VRControllerInput.cs" t="Include" />

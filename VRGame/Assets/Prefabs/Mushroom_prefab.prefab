@@ -71,6 +71,8 @@ GameObject:
   - component: {fileID: 4280212056858222}
   - component: {fileID: 65037549811516872}
   - component: {fileID: 114824650465075410}
+  - component: {fileID: 114554304964751742}
+  - component: {fileID: 114871606317316240}
   m_Layer: 0
   m_Name: Mushroom_prefab
   m_TagString: Untagged
@@ -206,7 +208,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1375751654213302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.23, y: 1.57, z: 0.03}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4321522456543878}
@@ -466,6 +468,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.61, y: 0.85, z: 0.8}
   m_Center: {x: 0, y: 0.06, z: 0}
+--- !u!114 &114554304964751742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375751654213302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b8f442c8214224c868d87b244f007b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDeadEvent: {fileID: 11400000, guid: 0a88b21f0b320dd47ab3949d1c841cc6, type: 2}
 --- !u!114 &114621818710927836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -479,6 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   axis: {x: 1, y: 0, z: 0}
+  randomizeAxis: 0
 --- !u!114 &114824650465075410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -490,9 +505,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb5e32894086e8647ac3b7f18b3e3af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colliders: []
+--- !u!114 &114871606317316240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375751654213302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cd1ec36d5554344bec274a26f46fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   collisionTag: Hand
-  playerLooseEvent: {fileID: 11400000, guid: 0a88b21f0b320dd47ab3949d1c841cc6, type: 2}
-  joint: {fileID: 138541270295388190}
 --- !u!138 &138541270295388190
 FixedJoint:
   m_ObjectHideFlags: 1

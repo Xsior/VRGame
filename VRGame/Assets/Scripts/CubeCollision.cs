@@ -2,9 +2,8 @@
 using Framework.References;
 using UnityEngine;
 
-public class CubeCollision : MonoBehaviour
+public class CubeCollision : MonoBehaviour, IHitListener
 {
-    public string collisionTag;
     public float destroyTimeout = 0.1f;
     public IntReference score;
     private ParticleSystem particles;
@@ -13,14 +12,8 @@ public class CubeCollision : MonoBehaviour
 
     private Collider col;
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnHit(Collision collision)
     {
-        Debug.Log("Collision");
-        if (!collision.gameObject.CompareTag(collisionTag)) {
-            return;
-        }
-        Debug.Log("With hand");
-
         var grabbing = collision.gameObject.GetComponent<Grabbing>();
         grabbing?.HapticPulse();
 
