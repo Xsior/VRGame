@@ -36,7 +36,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4696476368061188}
   - component: {fileID: 54476290775926492}
-  - component: {fileID: 138541270295388190}
   m_Layer: 0
   m_Name: right_part
   m_TagString: Untagged
@@ -208,7 +207,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1375751654213302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.2642851, y: -24.985289, z: 16.444273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4321522456543878}
@@ -505,7 +504,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb5e32894086e8647ac3b7f18b3e3af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliders: []
+  force: 25
+  rbs:
+  - {fileID: 54889558793658518}
+  - {fileID: 54476290775926492}
+  outerCollider: {fileID: 65037549811516872}
 --- !u!114 &114871606317316240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -518,16 +521,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionTag: Hand
---- !u!138 &138541270295388190
-FixedJoint:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1226861541118140}
-  m_ConnectedBody: {fileID: 54889558793658518}
-  m_BreakForce: 1000
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1

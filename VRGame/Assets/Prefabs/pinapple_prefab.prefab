@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 199455710735216526}
   - component: {fileID: 198756145138939078}
   - component: {fileID: 54042435903289102}
+  - component: {fileID: 114717693277277782}
   m_Layer: 10
   m_Name: pinapple_prefab
   m_TagString: Untagged
@@ -77,6 +78,7 @@ GameObject:
   - component: {fileID: 33291514684154774}
   - component: {fileID: 23738329826421014}
   - component: {fileID: 54751264687212618}
+  - component: {fileID: 135514425966275162}
   m_Layer: 10
   m_Name: BottomPart
   m_TagString: Untagged
@@ -92,8 +94,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4897857631965030}
-  - component: {fileID: 54228400113059440}
-  - component: {fileID: 138199266511738074}
+  - component: {fileID: 54035258508281224}
+  - component: {fileID: 135824960112597196}
   m_Layer: 10
   m_Name: TopPart
   m_TagString: Untagged
@@ -175,7 +177,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1434280190179582}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
@@ -216,8 +218,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1441566472533996}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.029, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 0, y: 0.029001234, z: 0}
   m_LocalScale: {x: 70.30904, y: 70.30904, z: 70.30904}
   m_Children: []
   m_Father: {fileID: 4258100657874904}
@@ -255,7 +257,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1726969054395340}
-  m_LocalRotation: {x: 0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.70710677}
   m_LocalPosition: {x: 0.0015004352, y: 0.24441716, z: 0.07989884}
   m_LocalScale: {x: 70.128235, y: 70.12823, z: 70.12821}
   m_Children: []
@@ -546,6 +548,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1956735852863078}
   m_Mesh: {fileID: 4300002, guid: 39ff2da4052cd744cbaf1070dbaa1fdd, type: 3}
+--- !u!54 &54035258508281224
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1593695813235766}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!54 &54042435903289102
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -561,21 +578,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!54 &54228400113059440
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1593695813235766}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!54 &54751264687212618
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -586,7 +588,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -603,7 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  axis: {x: 0, y: 1, z: 0}
+  axis: {x: 0.22476794, y: 0.2351948, z: 0.05052063}
   randomizeAxis: 1
 --- !u!114 &114399306292283184
 MonoBehaviour:
@@ -616,7 +618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42bc3547a23024f418f5c7ca23f5ea85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionTag: Hand
   destroyTimeout: 0.5
   score:
     useConstantValue: 0
@@ -634,8 +635,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb5e32894086e8647ac3b7f18b3e3af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 25
+  rbs:
+  - {fileID: 54751264687212618}
+  - {fileID: 54035258508281224}
+  outerCollider: {fileID: 136298353961203034}
+--- !u!114 &114717693277277782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142253954476330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cd1ec36d5554344bec274a26f46fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   collisionTag: Hand
-  joint: {fileID: 138199266511738074}
 --- !u!114 &114819905323083860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -648,6 +664,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0, z: 0}
+--- !u!135 &135514425966275162
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1441566472533996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.007
+  m_Center: {x: -0.0008733568, y: -0.0005671019, z: -0.0058330353}
+--- !u!135 &135824960112597196
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1593695813235766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.44
+  m_Center: {x: -0.0008733568, y: 0.48, z: -0.0058330353}
 --- !u!136 &136298353961203034
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -661,19 +701,6 @@ CapsuleCollider:
   m_Height: 0.61328244
   m_Direction: 1
   m_Center: {x: -0.022646874, y: 0.02105987, z: 9.978689e-17}
---- !u!138 &138199266511738074
-FixedJoint:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1593695813235766}
-  m_ConnectedBody: {fileID: 54751264687212618}
-  m_BreakForce: 1000
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!198 &198756145138939078
 ParticleSystem:
   m_ObjectHideFlags: 1

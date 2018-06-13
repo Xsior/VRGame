@@ -1,7 +1,7 @@
 ﻿using Framework.Events;
 using UnityEngine;
 
-public class MushroomBomb : UnityEngine.MonoBehaviour, IHitListener
+public class MushroomBomb : MonoBehaviour, IHitListener
 {
     public GameEvent playerDeadEvent;
 
