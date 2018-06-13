@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47683818-aa44-48e0-8f2f-d053a4566fed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tutorial_hazard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tutorial_hazard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/watermelon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/watermelon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs" afterDir="false" />
-    </list>
+    <list default="true" id="47683818-aa44-48e0-8f2f-d053a4566fed" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +34,8 @@
       <file leaf-file-name="CubeCollision.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="431">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <marker date="1528881022296" expanded="false" signature="6:70" ph="..." />
                 <marker date="1528881022296" expanded="true" signature="128:1026" ph="{...}" />
@@ -74,7 +70,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HazardGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BlocksSegment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BackWallCollision.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/DefaultHazardStep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/HazardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/ToonShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D91C9DD7-2E7E-43CA-ACAF-56C08F388C09/8b/e3809937/Mathf.cs" root0="SKIP_INSPECTION" />
@@ -202,12 +197,12 @@
       <workItem from="1527863832233" duration="5791000" />
       <workItem from="1528467426895" duration="1462000" />
       <workItem from="1528472164668" duration="1751000" />
-      <workItem from="1528872996788" duration="6284000" />
+      <workItem from="1528872996788" duration="6434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30272000" />
+    <option name="totallyTimeSpent" value="30422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,8 +589,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="431">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <marker date="1528881022296" expanded="false" signature="6:70" ph="..." />
             <marker date="1528881022296" expanded="true" signature="128:1026" ph="{...}" />
