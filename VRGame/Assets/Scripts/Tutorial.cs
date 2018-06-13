@@ -60,14 +60,13 @@ public class Tutorial : MonoBehaviour
 
         watemelonUI.SetActive(true);
 
-        yield return new WaitForSeconds(3f);
-
-        watemelonUI.SetActive(false);
+        yield return new WaitForSeconds(2f);
 
         Instantiate(watermelonPrefab, hazardSpawnPoint.position, watermelonPrefab.transform.rotation);
 
         yield return waitForHazardDestroy;
-
+        
+        watemelonUI.SetActive(false);
         tutorialUI.SetActive(false);
         hazardGenerator.enabled = true;
     }
