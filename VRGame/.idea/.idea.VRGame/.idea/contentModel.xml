@@ -8,8 +8,6 @@
       <e p="Assets" t="Include">
         <e p="CameraDirectionTest.cs" t="Include" />
         <e p="Materials" t="Include">
-          <e p="Distortion.shader" t="Include" />
-          <e p="FadeOut.shader" t="Include" />
           <e p="ToonShader.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
@@ -111,6 +109,7 @@
             <e p="IFadeOutListener.cs" t="Include" />
             <e p="IHitListener.cs" t="Include" />
           </e>
+          <e p="JuiceFadeIn.cs" t="Include" />
           <e p="LaserPointer.cs" t="Include" />
           <e p="MushroomBomb.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
@@ -120,6 +119,7 @@
           <e p="TearingApart.cs" t="Include" />
           <e p="TimeStopper.cs" t="Include" />
           <e p="Tutorial.cs" t="Include" />
+          <e p="TutorialControllersDisable.cs" t="Include" />
           <e p="VRControllerInput.cs" t="Include" />
           <e p="Walls" t="Include">
             <e p="HoleInTheWall.cs" t="Include" />
@@ -131,6 +131,9 @@
           <e p="WatermelonOnHitEvent.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
+          <e p="Distortion.shader" t="Include" />
+          <e p="FadeOut.shader" t="Include" />
+          <e p="ImageFade.shader" t="Include" />
           <e p="Outline.shader" t="Include" />
           <e p="ToonShader_Final.shader" t="Include" />
         </e>
