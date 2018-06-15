@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Framework.Events;
 using UnityEngine;
 
 public class Tutorial : MonoBehaviour
@@ -9,12 +10,17 @@ public class Tutorial : MonoBehaviour
     public GameObject tutorialUI;
     public GameObject[] tutorialTexts;
     public GameObject watemelonUI;
+    public GameObject mushroomUI;
 
     [Space]
     public GameObject pinapplePrefab;
     public GameObject watermelonPrefab;
+    public GameObject mushroomPrefab;
     public Transform hazardSpawnPoint;
+    public Transform mushroomSpawnPoint;
 
+    public GameEvent mushroomEvent;
+    
     [Header("Tutorial parameters")]
     public float textWaitTime;
     public float hazardAppearenceTime;
@@ -68,6 +74,23 @@ public class Tutorial : MonoBehaviour
         
         watemelonUI.SetActive(false);
         tutorialUI.SetActive(false);
+        
+        mushroomEvent.Raise();
+
+        Instantiate(mushroomPrefab, mushroomSpawnPoint.position, mushroomSpawnPoint.rotation);
+
+        yield return new WaitForSeconds(4f);
+
+        mushroomUI.SetActive(true);
+
+        mushroomEvent.Raise();
+        
+        Instantiate(pinapplePrefab, hazardSpawnPoint.position, Quaternion.identity);
+
+        yield return waitForHazardDestroy;
+
+        mushroomUI.SetActive(false);
+        
         hazardGenerator.enabled = true;
     }
 
