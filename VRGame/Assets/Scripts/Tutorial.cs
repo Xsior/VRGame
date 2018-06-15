@@ -81,7 +81,7 @@ public class Tutorial : MonoBehaviour
 
         Instantiate(mushroomPrefab, mushroomSpawnPoint.position, mushroomSpawnPoint.rotation);
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(8f);
 
         mushroomUI.SetActive(true);
 
