@@ -7,6 +7,7 @@ public class MushroomBomb : MonoBehaviour, IHitListener
 
     public void OnHit(Collision other)
     {
+        Debug.Log("!!!");
         playerDeadEvent.Raise();
     }
 }
