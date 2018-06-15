@@ -60,7 +60,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4258100657874904}
-  - component: {fileID: 114019885585546842}
   m_Layer: 10
   m_Name: pinappleBig
   m_TagString: Untagged
@@ -272,7 +271,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1142253954476330}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 11.701964, y: 10.219044, z: -2.7244263}
+  m_LocalPosition: {x: -21.462975, y: 22.085419, z: 6.6003575}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4258100657874904}
@@ -588,20 +587,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114019885585546842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1434280190179582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5923f7467beba249b887a8faa0570dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  axis: {x: 0.22476794, y: 0.2351948, z: 0.05052063}
-  randomizeAxis: 1
 --- !u!114 &114399306292283184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -770,7 +755,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 448105708
+  randomSeed: 487152589
   InitialModule:
     serializedVersion: 3
     enabled: 1

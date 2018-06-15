@@ -71,6 +71,8 @@ public class Tutorial : MonoBehaviour
         Instantiate(watermelonPrefab, hazardSpawnPoint.position, watermelonPrefab.transform.rotation);
 
         yield return waitForHazardDestroy;
+
+        isHazardDestroyed = false;
         
         watemelonUI.SetActive(false);
         tutorialUI.SetActive(false);
@@ -88,6 +90,8 @@ public class Tutorial : MonoBehaviour
         Instantiate(pinapplePrefab, hazardSpawnPoint.position, Quaternion.identity);
 
         yield return waitForHazardDestroy;
+
+        isHazardDestroyed = false;
 
         mushroomUI.SetActive(false);
         
