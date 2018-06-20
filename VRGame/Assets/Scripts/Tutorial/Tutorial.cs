@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using Framework.Events;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
 {
     [Header("Control fields")]
     public GameObject tutorialUI;
-    //public GameObject[] tutorialTexts;
     public GameObject watemelonUI;
     public GameObject mushroomUI;
+    public GameObject finishTrigger;
 
     [Space]
     public GameObject pinapplePrefab;
@@ -24,18 +25,22 @@ public class Tutorial : MonoBehaviour
     public float textWaitTime;
     public float hazardAppearenceTime;
 
+    public string sceneName;
+
     private bool isHazardDestroyed;
     private WaitUntil waitForHazardDestroy;
 
     public void OnHazardDestroyed()
     {
         if (isActiveAndEnabled) {
+            Debug.Log("On hazard destroyed");
             isHazardDestroyed = true;
         }
     }
 
     private void Start()
     {
+        isHazardDestroyed = false;
         StartCoroutine(TutorialCoroutine());
     }
 
@@ -81,7 +86,10 @@ public class Tutorial : MonoBehaviour
 
         yield return waitForHazardDestroy;
 
+        isHazardDestroyed = false;
         mushroomUI.SetActive(false);
+
+        finishTrigger.SetActive(true);
     }
 
     private bool IsHazardDestroyed()

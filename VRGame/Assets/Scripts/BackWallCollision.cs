@@ -46,7 +46,7 @@ public class BackWallCollision : MonoBehaviour
         for(int i =0; i < slicesPerHP; i++)
         {
             children[i].GetComponent<Rigidbody>().isKinematic = false;
-            children[i].GetComponent<Rigidbody>().AddForce(new Vector3(-800,300, 0));
+            children[i].GetComponent<Rigidbody>().AddForce(new Vector3(800,300, 0));
             Destroy(children[i], 3f);
             children.RemoveAt(i);
             Destroy(indictaorChildren[i]);

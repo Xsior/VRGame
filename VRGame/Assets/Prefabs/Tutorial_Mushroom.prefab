@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 114403854200839680}
   - component: {fileID: 54064177118066180}
   - component: {fileID: 114333693443244918}
+  - component: {fileID: 114714132672379178}
   m_Layer: 10
   m_Name: Tutorial_Mushroom
   m_TagString: Untagged
@@ -155,7 +156,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1354105930444838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.557383, y: -0.21635056, z: 4.9653125}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4057637205343222}
@@ -246,7 +247,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 08f976fba5683d14ea360d857a7b748c, type: 2}
   m_StaticBatchInfo:
@@ -281,7 +281,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 08f976fba5683d14ea360d857a7b748c, type: 2}
   m_StaticBatchInfo:
@@ -316,7 +315,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 08f976fba5683d14ea360d857a7b748c, type: 2}
   m_StaticBatchInfo:
@@ -351,7 +349,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 08f976fba5683d14ea360d857a7b748c, type: 2}
   m_StaticBatchInfo:
@@ -518,6 +515,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDeadEvent: {fileID: 11400000, guid: 0a88b21f0b320dd47ab3949d1c841cc6, type: 2}
+--- !u!114 &114714132672379178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1354105930444838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c929cd48aa44ab9b7e916197a82afee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114887332844205998
 MonoBehaviour:
   m_ObjectHideFlags: 1

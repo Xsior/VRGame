@@ -29,7 +29,7 @@ public class HazardGenerator : MonoBehaviour
     public int blocksBeforeTheWall = 7;
 
     private float currentSpeed;
-    private float timer = 2;
+    private float timer = 5;
     private float toNextWall;
 
     private void GenerateBlock ()
