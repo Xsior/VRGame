@@ -50,11 +50,6 @@ public class Tutorial : MonoBehaviour
         
         tutorialUI.SetActive(true);
 
-//        foreach (var text in tutorialTexts) {
-//            text.SetActive(true);
-//            yield return new WaitForSeconds(textWaitTime);
-//        }
-
         yield return new WaitForSeconds(hazardAppearenceTime);
 
         Instantiate(pinapplePrefab, hazardSpawnPoint.position, Quaternion.identity);
@@ -65,7 +60,7 @@ public class Tutorial : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         
-        yield break;
+        tutorialUI.SetActive(false);
 
         watemelonUI.SetActive(true);
 
@@ -78,23 +73,13 @@ public class Tutorial : MonoBehaviour
         isHazardDestroyed = false;
         
         watemelonUI.SetActive(false);
-        tutorialUI.SetActive(false);
+        mushroomUI.SetActive(true);
         
-        mushroomEvent.Raise();
+        yield return new WaitForSeconds(3f);
 
         Instantiate(mushroomPrefab, mushroomSpawnPoint.position, mushroomSpawnPoint.rotation);
 
-        yield return new WaitForSeconds(8f);
-
-        mushroomUI.SetActive(true);
-
-        mushroomEvent.Raise();
-        
-        Instantiate(pinapplePrefab, hazardSpawnPoint.position, Quaternion.identity);
-
         yield return waitForHazardDestroy;
-
-        isHazardDestroyed = false;
 
         mushroomUI.SetActive(false);
     }
