@@ -6,9 +6,8 @@ using UnityEngine;
 public class Tutorial : MonoBehaviour
 {
     [Header("Control fields")]
-    public HazardGenerator hazardGenerator;
     public GameObject tutorialUI;
-    public GameObject[] tutorialTexts;
+    //public GameObject[] tutorialTexts;
     public GameObject watemelonUI;
     public GameObject mushroomUI;
 
@@ -30,7 +29,9 @@ public class Tutorial : MonoBehaviour
 
     public void OnHazardDestroyed()
     {
-        isHazardDestroyed = true;
+        if (isActiveAndEnabled) {
+            isHazardDestroyed = true;
+        }
     }
 
     private void Start()
@@ -45,14 +46,14 @@ public class Tutorial : MonoBehaviour
 
     private IEnumerator TutorialCoroutine()
     {
-        hazardGenerator.enabled = false;
-
+        yield return new WaitForSeconds(textWaitTime);
+        
         tutorialUI.SetActive(true);
 
-        foreach (var text in tutorialTexts) {
-            text.SetActive(true);
-            yield return new WaitForSeconds(textWaitTime);
-        }
+//        foreach (var text in tutorialTexts) {
+//            text.SetActive(true);
+//            yield return new WaitForSeconds(textWaitTime);
+//        }
 
         yield return new WaitForSeconds(hazardAppearenceTime);
 
@@ -63,6 +64,8 @@ public class Tutorial : MonoBehaviour
         isHazardDestroyed = false;
 
         yield return new WaitForSeconds(1f);
+        
+        yield break;
 
         watemelonUI.SetActive(true);
 
@@ -94,8 +97,6 @@ public class Tutorial : MonoBehaviour
         isHazardDestroyed = false;
 
         mushroomUI.SetActive(false);
-        
-        hazardGenerator.enabled = true;
     }
 
     private bool IsHazardDestroyed()

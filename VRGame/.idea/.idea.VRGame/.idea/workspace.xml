@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47683818-aa44-48e0-8f2f-d053a4566fed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mushroom_prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mushroom_prefab.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TutorialTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Mushroom/mushroom.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Mushroom/mushroom.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Salami.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Salami.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tutorial_hazard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tutorial_hazard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/etc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,96 +21,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BackWallCollision.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BackWallCollision.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-              <folding>
-                <marker date="1527862102326" expanded="false" signature="6:76" ph="..." />
-                <marker date="1527862102326" expanded="true" signature="124:1868" ph="{...}" />
-                <marker date="1527862102326" expanded="true" signature="437:658" ph="{...}" />
-                <marker date="1527862102326" expanded="true" signature="500:540" ph="{...}" />
-                <marker date="1527862102326" expanded="true" signature="596:652" ph="{...}" />
-                <marker date="1527862102326" expanded="true" signature="676:1000" ph="{...}" />
-                <marker date="1527862102326" expanded="true" signature="1023:1866" ph="{...}" />
-                <marker date="1527862102326" expanded="true" signature="1124:1186" ph="{...}" />
-                <marker date="1527862102326" expanded="true" signature="1230:1565" ph="{...}" />
-                <marker date="1527862102326" expanded="true" signature="1574:1860" ph="/* foreach (Rigidbody c in children) ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tutorial.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tutorial.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="465">
+              <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
               <folding>
-                <marker date="1529079120268" expanded="false" signature="6:102" ph="..." />
-                <marker date="1529079120268" expanded="true" signature="141:2578" ph="{...}" />
-                <marker date="1529079120268" expanded="true" signature="835:881" ph="{...}" />
-                <marker date="1529079120268" expanded="true" signature="907:964" ph="{...}" />
-                <marker date="1529079120268" expanded="true" signature="990:1067" ph="{...}" />
-                <marker date="1529079120268" expanded="true" signature="1112:2492" ph="{...}" />
-                <marker date="1529079120268" expanded="true" signature="1242:1346" ph="{...}" />
-                <marker date="1529079120268" expanded="true" signature="2530:2576" ph="{...}" />
+                <marker date="1529485984248" expanded="false" signature="6:102" ph="..." />
+                <marker date="1529485984248" expanded="true" signature="141:2595" ph="{...}" />
+                <marker date="1529485984248" expanded="true" signature="793:887" ph="{...}" />
+                <marker date="1529485984248" expanded="true" signature="832:881" ph="{...}" />
+                <marker date="1529485984248" expanded="true" signature="913:970" ph="{...}" />
+                <marker date="1529485984248" expanded="true" signature="996:1073" ph="{...}" />
+                <marker date="1529485984248" expanded="true" signature="1118:2509" ph="{...}" />
+                <marker date="1529485984248" expanded="true" signature="1226:1382" ph="/* foreach (var text in tutorialTexts) { ... */" />
+                <marker date="1529485984248" expanded="true" signature="2547:2593" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToonShader_Final.shader" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Shaders/ToonShader_Final.shader">
+      <file leaf-file-name="CubeCollision.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+            <state relative-caret-position="465">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
-                <marker date="1527782826558" expanded="true" signature="43:3915" ph="{...}" />
-                <marker date="1527782826558" expanded="true" signature="63:486" ph="{...}" />
-                <marker date="1527782826558" expanded="true" signature="504:3889" ph="{...}" />
-                <marker date="1527782826558" expanded="true" signature="523:588" ph="{...}" />
-                <marker date="1527782826558" expanded="true" signature="618:3884" ph="{...}" />
-                <marker date="1527782826558" expanded="true" signature="693:3871" ph="{...}" />
+                <marker date="1528881022296" expanded="false" signature="6:70" ph="..." />
+                <marker date="1528881022296" expanded="true" signature="128:1026" ph="{...}" />
+                <marker date="1528881022296" expanded="true" signature="350:893" ph="{...}" />
+                <marker date="1528881022296" expanded="true" signature="562:751" ph="/* foreach(MeshRenderer m in GetComponentsInChildren&lt;MeshRenderer&gt;()) ... */" />
+                <marker date="1528881022296" expanded="true" signature="920:1024" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TearingApart.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TearingApart.cs">
+      <file leaf-file-name="TutorialTrigger.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutorialTrigger.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="120">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding>
-                <marker date="1528876380070" expanded="false" signature="6:102" ph="..." />
-                <marker date="1528876380070" expanded="true" signature="159:921" ph="{...}" />
-                <marker date="1528876380070" expanded="true" signature="277:298" ph="{...}" />
-                <marker date="1528876380070" expanded="true" signature="354:594" ph="{...}" />
-                <marker date="1528876380070" expanded="true" signature="443:479" ph="{...}" />
-                <marker date="1528876380070" expanded="true" signature="537:591" ph="{...}" />
-                <marker date="1528876380070" expanded="true" signature="617:754" ph="{...}" />
-                <marker date="1528876380070" expanded="true" signature="647:724" ph="{...}" />
-                <marker date="1528876380070" expanded="true" signature="799:919" ph="{...}" />
-                <marker date="1528876380070" expanded="true" signature="829:916" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TutorialControllersDisable.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutorialControllersDisable.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-              <folding>
-                <marker date="1529073406442" expanded="true" signature="75:729" ph="{...}" />
-                <marker date="1529073406442" expanded="true" signature="223:316" ph="{...}" />
-                <marker date="1529073406442" expanded="true" signature="356:571" ph="{...}" />
-                <marker date="1529073406442" expanded="true" signature="411:467" ph="{...}" />
-                <marker date="1529073406442" expanded="true" signature="513:565" ph="{...}" />
-                <marker date="1529073406442" expanded="true" signature="597:727" ph="{...}" />
+                <marker date="1529484183426" expanded="true" signature="78:205" ph="{...}" />
+                <marker date="1529484183426" expanded="true" signature="158:203" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -133,6 +94,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HazardGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BlocksSegment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BackWallCollision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TutorialTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hazards/HazardManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TutorialControllersDisable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Materials/ToonShader.shader" root0="FORCE_HIGHLIGHTING" />
@@ -165,6 +127,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TearingApart.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeCollision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TutorialControllersDisable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TutorialTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" />
       </list>
     </option>
@@ -181,18 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-hidden-items" value="false" />
-      </pane>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -217,12 +169,28 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
+            </path>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRGame" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="BWa&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/BackWallCollision.cs&#10;Tutori&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/Tutorial.cs&#10;Cu&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/CubeCollision.cs&#10;BCol&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/BackWallCollision.cs&#10;TooSha&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Materials/ToonShader.shader&#10;Col&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/CubeCollision.cs&#10;Rota&#9;null&#9;null&#10;HazaGe&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="CuCo&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/CubeCollision.cs&#10;Tut&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/Tutorial.cs&#10;BWa&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/BackWallCollision.cs&#10;Tutori&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/Tutorial.cs&#10;Cu&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/CubeCollision.cs&#10;BCol&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/BackWallCollision.cs&#10;TooSha&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Materials/ToonShader.shader&#10;Col&#9;FILE&#9;file://D:/UnityProjects/VRGame/VRGame/Assets/Scripts/CubeCollision.cs&#10;Rota&#9;null&#9;null&#10;HazaGe&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -259,11 +227,12 @@
       <workItem from="1528472164668" duration="1751000" />
       <workItem from="1528872996788" duration="6434000" />
       <workItem from="1529072423252" duration="1401000" />
+      <workItem from="1529484045216" duration="1653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31849000" />
+    <option name="totallyTimeSpent" value="33502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,7 +254,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14901665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15128593" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -306,8 +275,19 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grabbing.cs">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutorialControllersDisable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding>
+            <marker date="1529073406442" expanded="true" signature="223:316" ph="{...}" />
+            <marker date="1529073406442" expanded="true" signature="356:571" ph="{...}" />
+            <marker date="1529073406442" expanded="true" signature="411:467" ph="{...}" />
+            <marker date="1529073406442" expanded="true" signature="513:565" ph="{...}" />
+            <marker date="1529073406442" expanded="true" signature="597:727" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HitBroadcaster.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -348,27 +328,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/CustomAssets/Score.asset">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Walls/HoleInTheWall.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1523962867516" expanded="true" signature="62:760" ph="{...}" />
-            <marker date="1523962867516" expanded="true" signature="208:398" ph="{...}" />
-            <marker date="1523962867516" expanded="true" signature="441:563" ph="{...}" />
-            <marker date="1523962867516" expanded="true" signature="611:758" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/ToonShader_Final.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="1500">
           <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
           <folding>
-            <marker date="1527782826558" expanded="true" signature="43:3915" ph="{...}" />
             <marker date="1527782826558" expanded="true" signature="63:486" ph="{...}" />
             <marker date="1527782826558" expanded="true" signature="504:3889" ph="{...}" />
             <marker date="1527782826558" expanded="true" signature="523:588" ph="{...}" />
@@ -402,7 +369,6 @@
         <state relative-caret-position="30">
           <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
           <folding>
-            <marker date="1529073406442" expanded="true" signature="75:729" ph="{...}" />
             <marker date="1529073406442" expanded="true" signature="223:316" ph="{...}" />
             <marker date="1529073406442" expanded="true" signature="356:571" ph="{...}" />
             <marker date="1529073406442" expanded="true" signature="411:467" ph="{...}" />
@@ -417,14 +383,15 @@
         <state relative-caret-position="431">
           <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
-            <marker date="1529079120268" expanded="false" signature="6:102" ph="..." />
-            <marker date="1529079120268" expanded="true" signature="141:2578" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="835:881" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="907:964" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="990:1067" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="1112:2492" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="1242:1346" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="2530:2576" ph="{...}" />
+            <marker date="1529485984248" expanded="false" signature="6:102" ph="..." />
+            <marker date="1529485984248" expanded="true" signature="141:2595" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="793:887" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="832:881" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="913:970" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="996:1073" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="1118:2509" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="1226:1382" ph="/* foreach (var text in tutorialTexts) { ... */" />
+            <marker date="1529485984248" expanded="true" signature="2547:2593" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -620,13 +587,6 @@
         <state relative-caret-position="-19" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/ToonShader.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D91C9DD7-2E7E-43CA-ACAF-56C08F388C09/8b/e3809937/Mathf.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -664,7 +624,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TearingApart.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
+        <state relative-caret-position="645">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <marker date="1528876380070" expanded="false" signature="6:102" ph="..." />
@@ -677,6 +637,56 @@
             <marker date="1528876380070" expanded="true" signature="647:724" ph="{...}" />
             <marker date="1528876380070" expanded="true" signature="799:919" ph="{...}" />
             <marker date="1528876380070" expanded="true" signature="829:916" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Walls/HoleInTheWall.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutorialControllersDisable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding>
+            <marker date="1529073406442" expanded="true" signature="223:316" ph="{...}" />
+            <marker date="1529073406442" expanded="true" signature="356:571" ph="{...}" />
+            <marker date="1529073406442" expanded="true" signature="411:467" ph="{...}" />
+            <marker date="1529073406442" expanded="true" signature="513:565" ph="{...}" />
+            <marker date="1529073406442" expanded="true" signature="597:727" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BackWallCollision.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <marker date="1527862102326" expanded="false" signature="6:76" ph="..." />
+            <marker date="1527862102326" expanded="true" signature="124:1868" ph="{...}" />
+            <marker date="1527862102326" expanded="true" signature="437:658" ph="{...}" />
+            <marker date="1527862102326" expanded="true" signature="500:540" ph="{...}" />
+            <marker date="1527862102326" expanded="true" signature="596:652" ph="{...}" />
+            <marker date="1527862102326" expanded="true" signature="676:1000" ph="{...}" />
+            <marker date="1527862102326" expanded="true" signature="1023:1866" ph="{...}" />
+            <marker date="1527862102326" expanded="true" signature="1124:1186" ph="{...}" />
+            <marker date="1527862102326" expanded="true" signature="1230:1565" ph="{...}" />
+            <marker date="1527862102326" expanded="true" signature="1574:1860" ph="/* foreach (Rigidbody c in children) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/ToonShader.shader">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutorialTrigger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <marker date="1529484183426" expanded="true" signature="78:205" ph="{...}" />
+            <marker date="1529484183426" expanded="true" signature="158:203" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -695,65 +705,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Walls/HoleInTheWall.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1523962867516" expanded="true" signature="62:760" ph="{...}" />
-            <marker date="1523962867516" expanded="true" signature="208:398" ph="{...}" />
-            <marker date="1523962867516" expanded="true" signature="441:563" ph="{...}" />
-            <marker date="1523962867516" expanded="true" signature="611:758" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutorialControllersDisable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding>
-            <marker date="1529073406442" expanded="true" signature="75:729" ph="{...}" />
-            <marker date="1529073406442" expanded="true" signature="223:316" ph="{...}" />
-            <marker date="1529073406442" expanded="true" signature="356:571" ph="{...}" />
-            <marker date="1529073406442" expanded="true" signature="411:467" ph="{...}" />
-            <marker date="1529073406442" expanded="true" signature="513:565" ph="{...}" />
-            <marker date="1529073406442" expanded="true" signature="597:727" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="465">
+          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
           <folding>
-            <marker date="1529079120268" expanded="false" signature="6:102" ph="..." />
-            <marker date="1529079120268" expanded="true" signature="141:2578" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="835:881" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="907:964" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="990:1067" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="1112:2492" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="1242:1346" ph="{...}" />
-            <marker date="1529079120268" expanded="true" signature="2530:2576" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BackWallCollision.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding>
-            <marker date="1527862102326" expanded="false" signature="6:76" ph="..." />
-            <marker date="1527862102326" expanded="true" signature="124:1868" ph="{...}" />
-            <marker date="1527862102326" expanded="true" signature="437:658" ph="{...}" />
-            <marker date="1527862102326" expanded="true" signature="500:540" ph="{...}" />
-            <marker date="1527862102326" expanded="true" signature="596:652" ph="{...}" />
-            <marker date="1527862102326" expanded="true" signature="676:1000" ph="{...}" />
-            <marker date="1527862102326" expanded="true" signature="1023:1866" ph="{...}" />
-            <marker date="1527862102326" expanded="true" signature="1124:1186" ph="{...}" />
-            <marker date="1527862102326" expanded="true" signature="1230:1565" ph="{...}" />
-            <marker date="1527862102326" expanded="true" signature="1574:1860" ph="/* foreach (Rigidbody c in children) ... */" />
+            <marker date="1529485984248" expanded="false" signature="6:102" ph="..." />
+            <marker date="1529485984248" expanded="true" signature="141:2595" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="793:887" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="832:881" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="913:970" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="996:1073" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="1118:2509" ph="{...}" />
+            <marker date="1529485984248" expanded="true" signature="1226:1382" ph="/* foreach (var text in tutorialTexts) { ... */" />
+            <marker date="1529485984248" expanded="true" signature="2547:2593" ph="{...}" />
           </folding>
         </state>
       </provider>

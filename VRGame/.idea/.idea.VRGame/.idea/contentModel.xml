@@ -114,12 +114,14 @@
           <e p="MushroomBomb.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
+          <e p="SceneLoad.cs" t="Include" />
           <e p="SceneReloading.cs" t="Include" />
           <e p="ScoreboardManager.cs" t="Include" />
           <e p="TearingApart.cs" t="Include" />
           <e p="TimeStopper.cs" t="Include" />
           <e p="Tutorial.cs" t="Include" />
           <e p="TutorialControllersDisable.cs" t="Include" />
+          <e p="TutorialTrigger.cs" t="Include" />
           <e p="VRControllerInput.cs" t="Include" />
           <e p="Walls" t="Include">
             <e p="HoleInTheWall.cs" t="Include" />
