@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 54267665525159906}
   - component: {fileID: 114517129041152168}
   - component: {fileID: 114783416269339802}
+  - component: {fileID: 114515510454727260}
   m_Layer: 12
   m_Name: watermelon
   m_TagString: Untagged
@@ -152,6 +153,19 @@ MonoBehaviour:
     constantValue: 0
     variable: {fileID: 11400000, guid: 54a1f4e359ff8cc4795aadc4c1a71455, type: 2}
   onBlockCollision: {fileID: 11400000, guid: 42c0bae3dbdb54646b2f554dd5db77ce, type: 2}
+--- !u!114 &114515510454727260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1396198838809466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9cb20e35f877df42ba80ac28c17911a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crashSoft: {fileID: 8300000, guid: 3d1209143e608cf46a21e56e5d507c6f, type: 3}
+  crashHard: {fileID: 8300000, guid: a60415fbea988e54c9b5c5060a996a89, type: 3}
 --- !u!114 &114517129041152168
 MonoBehaviour:
   m_ObjectHideFlags: 1
