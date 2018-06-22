@@ -9,6 +9,7 @@ public class HazardGenerator : MonoBehaviour
     public List<GameObject> blocks;
     public GameObject block;
     public GameObject watermelon;
+    public GameObject mushroom;
     public Camera VrHead;
 
     //This is never used. Remove?
@@ -31,7 +32,7 @@ public class HazardGenerator : MonoBehaviour
     private float currentSpeed;
     private float timer = 5;
     private float toNextWall;
-
+    private int shroomCounter = 0;
     private void GenerateBlock ()
     {
         int r = Random.Range(0, blocks.Count + 1);
@@ -57,8 +58,17 @@ public class HazardGenerator : MonoBehaviour
     {
         float rX = Random.Range(-0.6f, 0.6f);
         float rY = Random.Range(PlayerHeight - 0.6f, PlayerHeight + 0.4f);
-
-        var blockInstance = Instantiate(block, transform, false);
+        GameObject blockInstance;
+        if (shroomCounter >= 3 && Random.Range(0,3) == 0)
+        {
+            blockInstance = Instantiate(mushroom, transform, false);
+            shroomCounter -= 3;
+        }
+        else
+        {
+            blockInstance = Instantiate(block, transform, false);
+            shroomCounter++;
+        }
         var blockVelocity = blockInstance.GetComponent<ConstantVelocity>();
         blockInstance.transform.localPosition = new Vector3(rX, rY, spawningDistance);
         blockVelocity.velocity = new Vector3(0, 0, -currentSpeed);
