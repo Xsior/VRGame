@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 114136322036152632}
   m_Layer: 10
   m_Name: Tutorial_hazard
-  m_TagString: Untagged
+  m_TagString: Pinapple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

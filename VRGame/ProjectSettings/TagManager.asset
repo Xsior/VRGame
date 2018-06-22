@@ -8,6 +8,9 @@ TagManager:
   - projectile
   - Hand
   - Head
+  - Watermelon
+  - Pinapple
+  - Mushroom
   layers:
   - Default
   - TransparentFX

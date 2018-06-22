@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 198522463841608384}
   m_Layer: 14
   m_Name: Mushroom_prefab
-  m_TagString: Untagged
+  m_TagString: Mushroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

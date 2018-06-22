@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 114442188150695368}
   m_Layer: 10
   m_Name: pinapple_prefab
-  m_TagString: Untagged
+  m_TagString: Pinapple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -616,8 +616,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9cb20e35f877df42ba80ac28c17911a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crashSoft: {fileID: 8300000, guid: 476fc85e98a99c042b54d4bee10dbb36, type: 3}
+  crashSoft: {fileID: 8300000, guid: 3a24d786e03b8bd4e92d5bd8b3edf675, type: 3}
   crashHard: {fileID: 8300000, guid: 3a24d786e03b8bd4e92d5bd8b3edf675, type: 3}
+  source: {fileID: 0}
 --- !u!114 &114531352567886262
 MonoBehaviour:
   m_ObjectHideFlags: 1

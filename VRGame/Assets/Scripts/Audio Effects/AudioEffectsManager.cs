@@ -8,7 +8,7 @@ public class AudioEffectsManager : MonoBehaviour, IHitListener
     public AudioClip crashHard;
 
 
-    private AudioSource source;
+    public AudioSource source;
     private float lowPitchRange = .75F;
     private float highPitchRange = 1.5F;
     private float velToVol = .2F;
