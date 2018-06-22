@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using UnityEngine;
+
+public class CollisionDisabler : MonoBehaviour
+{
+
+    public void DisableColliders()
+    {
+        foreach (var col in GetComponents<Collider>())
+        {
+            col.enabled = false;
+        }
+    }
+
+}

@@ -33,7 +33,6 @@ public class Tutorial : MonoBehaviour
     public void OnHazardDestroyed()
     {
         if (isActiveAndEnabled) {
-            Debug.Log("On hazard destroyed");
             isHazardDestroyed = true;
         }
     }
@@ -90,6 +89,10 @@ public class Tutorial : MonoBehaviour
         mushroomUI.SetActive(false);
 
         finishTrigger.SetActive(true);
+
+        yield return waitForHazardDestroy;
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private bool IsHazardDestroyed()
