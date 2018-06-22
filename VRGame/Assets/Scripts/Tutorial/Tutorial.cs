@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class Tutorial : MonoBehaviour
 {
     [Header("Control fields")]
-    public GameObject tutorialUI;
-    public GameObject watemelonUI;
-    public GameObject mushroomUI;
+    public GameObject pizzaHint;
+    public GameObject pinappleHint;
+    public GameObject watermelonHint;
+    public GameObject mushroomHint;
     public GameObject finishTrigger;
 
     [Space]
@@ -51,8 +52,13 @@ public class Tutorial : MonoBehaviour
     private IEnumerator TutorialCoroutine()
     {
         yield return new WaitForSeconds(textWaitTime);
-        
-        tutorialUI.SetActive(true);
+
+        pizzaHint.SetActive(true);
+
+        yield return new WaitForSeconds(3f);
+
+        pizzaHint.SetActive(false);
+        pinappleHint.SetActive(true);
 
         yield return new WaitForSeconds(hazardAppearenceTime);
 
@@ -64,9 +70,9 @@ public class Tutorial : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         
-        tutorialUI.SetActive(false);
+        pinappleHint.SetActive(false);
 
-        watemelonUI.SetActive(true);
+        watermelonHint.SetActive(true);
 
         yield return new WaitForSeconds(2f);
 
@@ -76,8 +82,8 @@ public class Tutorial : MonoBehaviour
 
         isHazardDestroyed = false;
         
-        watemelonUI.SetActive(false);
-        mushroomUI.SetActive(true);
+        watermelonHint.SetActive(false);
+        mushroomHint.SetActive(true);
         
         yield return new WaitForSeconds(3f);
 
@@ -86,7 +92,7 @@ public class Tutorial : MonoBehaviour
         yield return waitForHazardDestroy;
 
         isHazardDestroyed = false;
-        mushroomUI.SetActive(false);
+        mushroomHint.SetActive(false);
 
         finishTrigger.SetActive(true);
 
