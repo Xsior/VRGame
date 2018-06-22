@@ -22,8 +22,11 @@ public class HazardGenerator : MonoBehaviour
     public float PlayerHeight = 1.7f;
     public float wallSpawnHeight = 2.196f;
     public float distanceBetweenSegments = 4;
-
-
+    public int randomBlockSpawnPercent = 10;
+    public int mushroomSpawnPercent = 40;
+    public bool spawnWatermelons = true;
+    public bool spawnMushrooms = true; 
+    
     [Header("Timing")]
     public float distanceBetweenRandomBlocks = 3f;
     public float distanceBetweenWalls = 5f;
@@ -35,11 +38,12 @@ public class HazardGenerator : MonoBehaviour
     private int shroomCounter = 0;
     private void GenerateBlock ()
     {
-        int r = Random.Range(0, blocks.Count + 1);
-        if (r == blocks.Count) {
+        if (Random.Range(0, 100) < randomBlockSpawnPercent)
+        {
             GenerateRandomBlock();
             return;
         }
+        int r = Random.Range(0, blocks.Count);
         GameObject g = Instantiate(blocks[r], Vector3.zero, transform.rotation, transform);
         BlocksSegment b = g.GetComponent<BlocksSegment>();
         g.transform.localPosition = new Vector3(0, PlayerHeight - 0.2f, spawningDistance);
@@ -59,10 +63,10 @@ public class HazardGenerator : MonoBehaviour
         float rX = Random.Range(-0.6f, 0.6f);
         float rY = Random.Range(PlayerHeight - 0.6f, PlayerHeight + 0.4f);
         GameObject blockInstance;
-        if (shroomCounter >= 3 && Random.Range(0,3) == 0)
+        if (shroomCounter >= 2 && Random.Range(0,100) < mushroomSpawnPercent)
         {
             blockInstance = Instantiate(mushroom, transform, false);
-            shroomCounter -= 3;
+            shroomCounter -= 2;
         }
         else
         {

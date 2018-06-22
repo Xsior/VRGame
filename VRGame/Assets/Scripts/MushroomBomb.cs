@@ -8,6 +8,8 @@ public class MushroomBomb : MonoBehaviour, IHitListener
     public void OnHit(Collision other)
     {
         Debug.Log("!!!");
+        if (GetComponent<ParticleSystem>())
+            GetComponent<ParticleSystem>().Play();
         playerDeadEvent.Raise();
     }
 }
