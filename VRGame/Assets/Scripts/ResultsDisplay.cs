@@ -9,7 +9,6 @@ using UnityEngine;
 public class ResultsDisplay : MonoBehaviour, IFadeOutListener
 {
     public CanvasGroup canvasGroup;
-    public Camera renderingCamera;
     public float fadeSpeed;
     public IntReference score;
     public TMPro.TMP_Text scoreText;
@@ -17,7 +16,7 @@ public class ResultsDisplay : MonoBehaviour, IFadeOutListener
     public void OnFadeOut()
     {
         scoreText.text = score.Value.ToString();
-        renderingCamera.gameObject.SetActive(true);
+
         StartCoroutine(DisplayCoroutine());
     }
 
@@ -27,7 +26,6 @@ public class ResultsDisplay : MonoBehaviour, IFadeOutListener
         {
             canvasGroup.alpha += fadeSpeed * Time.deltaTime;
             yield return null;
-            renderingCamera.gameObject.SetActive(false);
         }
     }
 }

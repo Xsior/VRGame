@@ -7,6 +7,8 @@ public class CameraFadeOut : MonoBehaviour
 {
     public float fadeSpeed = 4;
     public Material fadeOutMaterial;
+    public Camera renderingCamera;
+
     private bool isTriggered;
 
     public void FadeOut ()
@@ -14,7 +16,9 @@ public class CameraFadeOut : MonoBehaviour
         if (isTriggered) {
             return;
         }
-
+        Debug.Log("CHUJ");
+        renderingCamera.enabled = (true);
+        gameObject.GetComponent<JuiceFadeIn>().enabled = false;
         isTriggered = true;
         StartCoroutine(FadeOutCoroutine());
     }
