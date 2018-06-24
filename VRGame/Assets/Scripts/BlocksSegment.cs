@@ -42,9 +42,16 @@ public class BlocksSegment : MonoBehaviour
     private void SpawnCubes ()
     {
         foreach (Transform child in transform) {
-            var itemInstance = Instantiate(itemPrefab, child, false);
-            itemInstance.transform.localPosition = Vector3.zero;
-            itemInstance.velocity = Velocity;
+            if (child.GetComponent<FruitSpawner>())
+            {
+                child.GetComponent<FruitSpawner>().SpawnCubes(Velocity);
+            }
+            else
+            {
+                var itemInstance = Instantiate(itemPrefab, child, false);
+                itemInstance.transform.localPosition = Vector3.zero;
+                itemInstance.velocity = Velocity;
+            }
         }
     }
 

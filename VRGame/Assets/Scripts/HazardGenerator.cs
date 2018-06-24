@@ -25,8 +25,8 @@ public class HazardGenerator : MonoBehaviour
     public int randomBlockSpawnPercent = 10;
     public int mushroomSpawnPercent = 40;
     public bool spawnWatermelons = true;
-    public bool spawnMushrooms = true; 
-    
+    public bool spawnMushrooms = true;
+
     [Header("Timing")]
     public float distanceBetweenRandomBlocks = 3f;
     public float distanceBetweenWalls = 5f;
@@ -36,7 +36,7 @@ public class HazardGenerator : MonoBehaviour
     private float timer = 5;
     private float toNextWall;
     private int shroomCounter = 0;
-    private void GenerateBlock ()
+    private void GenerateBlock()
     {
         if (Random.Range(0, 100) < randomBlockSpawnPercent)
         {
@@ -52,18 +52,20 @@ public class HazardGenerator : MonoBehaviour
         var length = Mathf.Approximately(b.length, 0f) ? b.getLength() : b.length;
 
         timer = (length + distanceBetweenSegments) / currentSpeed;
-        toNextWall--;
-        if (toNextWall <= 0) {
-            timer += 1.5f;
+        if (spawnWatermelons)
+            toNextWall--;
+        if (toNextWall <= 0)
+        {
+            timer += 0.2f;
         }
     }
 
-    private void GenerateRandomBlock ()
+    private void GenerateRandomBlock()
     {
         float rX = Random.Range(-0.6f, 0.6f);
         float rY = Random.Range(PlayerHeight - 0.75f, PlayerHeight + 0.3f);
         GameObject blockInstance;
-        if (shroomCounter >= 2 && Random.Range(0,100) < mushroomSpawnPercent)
+        if (spawnMushrooms && shroomCounter >= 2 && Random.Range(0, 100) < mushroomSpawnPercent)
         {
             blockInstance = Instantiate(mushroom, transform, false);
             shroomCounter -= 2;
@@ -71,19 +73,22 @@ public class HazardGenerator : MonoBehaviour
         else
         {
             blockInstance = Instantiate(block, transform, false);
-            shroomCounter++;
+            if (spawnMushrooms)
+                shroomCounter++;
         }
         var blockVelocity = blockInstance.GetComponent<ConstantVelocity>();
         blockInstance.transform.localPosition = new Vector3(rX, rY, spawningDistance);
         blockVelocity.velocity = new Vector3(0, 0, -currentSpeed);
         timer = distanceBetweenRandomBlocks / currentSpeed;
-        toNextWall--;
-        if (toNextWall <= 0) {
-            timer += 1.5f;
+        if (spawnWatermelons)
+            toNextWall--;
+        if (toNextWall <= 0)
+        {
+            timer += 0.4f;
         }
     }
 
-    private void GenerateWall ()
+    private void GenerateWall()
     {
         int r = Random.Range(0, walls.Count);
         GameObject g = Instantiate(walls[r], Vector3.zero, transform.rotation, transform);
@@ -101,7 +106,7 @@ public class HazardGenerator : MonoBehaviour
         blockInstance.GetComponent<ConstantVelocity>().velocity = new Vector3(0, 0, -currentSpeed);
         timer = distanceBetweenWalls / currentSpeed;
     }
-    void Start ()
+    void Start()
     {
         currentSpeed = startSpeed;
         toNextWall = blocksBeforeTheWall;
@@ -113,16 +118,22 @@ public class HazardGenerator : MonoBehaviour
 
     }
 
-    void FixedUpdate ()
+    void FixedUpdate()
     {
-        if (timer > 0) {
+        if (timer > 0)
+        {
             timer -= Time.fixedDeltaTime;
-        } else {
+        }
+        else
+        {
 
-            if (toNextWall <= 0) {
+            if (spawnWatermelons && toNextWall <= 0)
+            {
                 toNextWall = blocksBeforeTheWall;
                 GenerateWatermelon();
-            } else {
+            }
+            else
+            {
                 GenerateBlock();
             }
 
