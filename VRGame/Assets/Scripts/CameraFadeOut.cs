@@ -8,7 +8,7 @@ public class CameraFadeOut : MonoBehaviour
     public float fadeSpeed = 4;
     public Material fadeOutMaterial;
     public Camera renderingCamera;
-
+    public GameObject fruitParent; 
     private bool isTriggered;
 
     public void FadeOut ()
@@ -16,7 +16,6 @@ public class CameraFadeOut : MonoBehaviour
         if (isTriggered) {
             return;
         }
-        Debug.Log("CHUJ");
         renderingCamera.enabled = (true);
         gameObject.GetComponent<JuiceFadeIn>().enabled = false;
         isTriggered = true;
@@ -32,7 +31,7 @@ public class CameraFadeOut : MonoBehaviour
 
             yield return null;
         }
-
+        fruitParent.SetActive(false);
         fadeOutMaterial.SetFloat("_Progress", 1f);
         SendFadeOutMessage();
     }

@@ -73,7 +73,7 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineThickness: 0
     - _Parallax: 0.02
-    - _Shininess: 21.4
+    - _Shininess: 50
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -84,5 +84,5 @@ Material:
     - _Color: {r: 0.44132566, g: 0.8088235, b: 0.14273356, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 1, g: 0.8799189, b: 0.72794116, a: 1}
+    - _SpecColor: {r: 0.6025594, g: 0.9632353, b: 0.4603698, a: 1}
     - _UnlitColor: {r: 0.054119796, g: 0.5661765, b: 0.20597108, a: 1}
