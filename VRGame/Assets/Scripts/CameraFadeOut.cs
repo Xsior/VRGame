@@ -8,35 +8,40 @@ public class CameraFadeOut : MonoBehaviour
     public float fadeSpeed = 4;
     public Material fadeOutMaterial;
     public Camera renderingCamera;
-    public GameObject fruitParent; 
+    public GameObject fruitParent;
     private bool isTriggered;
 
-    public void FadeOut ()
+    public void FadeOut()
     {
-        if (isTriggered) {
+        if (isTriggered)
+        {
             return;
         }
-        renderingCamera.enabled = (true);
-        gameObject.GetComponent<JuiceFadeIn>().enabled = false;
+        if (renderingCamera)
+            renderingCamera.enabled = (true);
+        if (gameObject.GetComponent<JuiceFadeIn>())
+            gameObject.GetComponent<JuiceFadeIn>().enabled = false;
         isTriggered = true;
         StartCoroutine(FadeOutCoroutine());
     }
 
-    private IEnumerator FadeOutCoroutine ()
+    private IEnumerator FadeOutCoroutine()
     {
         float progress = 0f;
-        while (progress < 1f) {
+        while (progress < 1f)
+        {
             fadeOutMaterial.SetFloat("_Progress", progress);
             progress += fadeSpeed * Time.deltaTime;
 
             yield return null;
         }
-        fruitParent.SetActive(false);
+        if (fruitParent)
+            fruitParent.SetActive(false);
         fadeOutMaterial.SetFloat("_Progress", 1f);
         SendFadeOutMessage();
     }
 
-    private void OnRenderImage (RenderTexture source, RenderTexture destination)
+    private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
         if (!isTriggered)
         {
